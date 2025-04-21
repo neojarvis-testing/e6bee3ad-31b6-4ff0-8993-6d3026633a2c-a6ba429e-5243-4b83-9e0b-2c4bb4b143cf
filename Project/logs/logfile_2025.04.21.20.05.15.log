@@ -1,0 +1,19 @@
+2025-04-21 20:05:15,638 INFO  utils.LoggerHandler - Clicked on Specials & Offers
+ 2025-04-21 20:05:15,685 INFO  utils.LoggerHandler - URL contains /c/Savings_Center
+ 2025-04-21 20:05:20,056 INFO  utils.LoggerHandler - Clicked on Military Discount Benefit
+ 2025-04-21 20:05:20,137 INFO  utils.LoggerHandler - URL contains /c/military
+ 2025-04-21 20:05:27,088 INFO  utils.LoggerHandler - Clicked on DIY Projects And Ideas
+ 2025-04-21 20:05:27,436 INFO  utils.LoggerHandler - URL contains /c/diy_projects_and_ideas
+ 2025-04-21 20:05:31,764 INFO  utils.LoggerHandler - Clicked on Truck and Tool Rental
+ 2025-04-21 20:05:32,089 INFO  utils.LoggerHandler - URL contains /c/tool_and_truck_rental
+ 2025-04-21 20:05:36,664 INFO  utils.LoggerHandler - Clicked on Installation & Services
+ 2025-04-21 20:05:36,878 INFO  utils.LoggerHandler - URL contains /services
+ 2025-04-21 20:05:41,478 INFO  utils.LoggerHandler - Clicked on Moving Supplies And Rentals
+ 2025-04-21 20:05:41,671 INFO  utils.LoggerHandler - URL contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r
+ 2025-04-21 20:05:47,762 INFO  utils.LoggerHandler - Clicked on Protection Plans
+ 2025-04-21 20:05:48,478 INFO  utils.LoggerHandler - URL contains /c/The_Home_Depot_Protection_Plans
+ 2025-04-21 20:05:50,733 INFO  utils.LoggerHandler - Clicked on Rebate center
+ 2025-04-21 20:05:50,760 INFO  utils.LoggerHandler - URL contains /rebate-center/index.html
+ 2025-04-21 20:05:53,862 INFO  utils.LoggerHandler - Clicked on Gift Cards
+ 2025-04-21 20:05:55,817 INFO  utils.LoggerHandler - URL contains /c/gift-cards
+ 

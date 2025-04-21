@@ -1,0 +1,19 @@
+2025-04-21 19:44:51,669 INFO  utils.LoggerHandler - Clicked on check order status
+ 2025-04-21 19:44:51,786 INFO  utils.LoggerHandler - URL contains /myaccount/guest-order-tracking
+ 2025-04-21 19:44:55,175 INFO  utils.LoggerHandler - Clicked on Pay your credit card
+ 2025-04-21 19:44:55,636 INFO  utils.LoggerHandler - URL contains /c/credit-center
+ 2025-04-21 19:44:59,250 INFO  utils.LoggerHandler - Clicked on Order Cancellation
+ 2025-04-21 19:44:59,439 INFO  utils.LoggerHandler - URL contains /c/Customer_Support_Answers#cancel
+ 2025-04-21 19:45:03,363 INFO  utils.LoggerHandler - Clicked on Return Policy
+ 2025-04-21 19:45:03,537 INFO  utils.LoggerHandler - URL contains /c/Return_Policy
+ 2025-04-21 19:45:06,451 INFO  utils.LoggerHandler - Clicked on Refund Policy
+ 2025-04-21 19:45:06,838 INFO  utils.LoggerHandler - URL contains /c/refund-policy
+ 2025-04-21 19:45:09,960 INFO  utils.LoggerHandler - Clicked on Shipping & Delivery
+ 2025-04-21 19:45:10,089 INFO  utils.LoggerHandler - URL contains /c/About_Your_Online_Order
+ 2025-04-21 19:45:12,872 INFO  utils.LoggerHandler - Clicked on Product Recalls
+ 2025-04-21 19:45:13,045 INFO  utils.LoggerHandler - URL contains /c/Product_Recalls
+ 2025-04-21 19:45:16,364 INFO  utils.LoggerHandler - Clicked on My Preference center
+ 2025-04-21 19:45:16,641 INFO  utils.LoggerHandler - URL contains privacy/MyPreferenceCenter
+ 2025-04-21 19:45:18,450 INFO  utils.LoggerHandler - Clicked on Privacy Security Center
+ 2025-04-21 19:45:19,340 INFO  utils.LoggerHandler - URL contains privacy/overview
+ 
