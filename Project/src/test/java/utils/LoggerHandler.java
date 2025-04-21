@@ -18,7 +18,7 @@ public class LoggerHandler {
         } catch (Exception e) {
         }
     }
-/*
+    /*
  * a. Method Name: trace
  * b. Author Name: Vansh Vijay
  * c. Description: This method logs trace-level messages using the logger.
