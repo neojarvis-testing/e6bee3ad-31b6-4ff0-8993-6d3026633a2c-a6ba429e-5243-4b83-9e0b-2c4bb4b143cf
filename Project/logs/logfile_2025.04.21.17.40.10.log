@@ -1,0 +1,10 @@
+2025-04-21 17:40:10,473 INFO  utils.LoggerHandler - Clicked on Careers
+ 2025-04-21 17:40:18,535 INFO  utils.LoggerHandler - Clicked on Corporate Information
+ 2025-04-21 17:40:25,268 ERROR utils.LoggerHandler - Not Verified url for Digital Newsroom
+ 2025-04-21 17:40:33,524 ERROR utils.LoggerHandler - Not Verified url for Home Depot Foundation
+ 2025-04-21 17:40:45,403 INFO  utils.LoggerHandler - Clicked on Investor Relations
+ 2025-04-21 17:40:56,142 INFO  utils.LoggerHandler - Clicked on Government Customers
+ 2025-04-21 17:41:06,415 INFO  utils.LoggerHandler - Clicked on Suppliers & Providers
+ 2025-04-21 17:41:17,119 INFO  utils.LoggerHandler - Clicked on Affiliate Program
+ 2025-04-21 17:41:27,068 INFO  utils.LoggerHandler - Clicked on Eco Actions
+ 

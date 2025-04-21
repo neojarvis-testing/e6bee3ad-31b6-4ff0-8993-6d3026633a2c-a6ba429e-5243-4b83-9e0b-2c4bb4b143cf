@@ -1,0 +1,18 @@
+2025-04-21 19:49:07,807 INFO  utils.LoggerHandler - Clicked on Credit Offers
+ 2025-04-21 19:49:09,037 INFO  utils.LoggerHandler - Verified text CREDIT CARD SERVICES
+ 2025-04-21 19:49:15,985 INFO  utils.LoggerHandler - Clicked on Apply Now
+ 2025-04-21 19:49:22,801 INFO  utils.LoggerHandler - Data inserted for First Name
+ 2025-04-21 19:49:23,098 INFO  utils.LoggerHandler - Data inserted for Last Name
+ 2025-04-21 19:49:23,414 INFO  utils.LoggerHandler - Data inserted for Email Address
+ 2025-04-21 19:49:23,685 INFO  utils.LoggerHandler - Data inserted for Mobile Number
+ 2025-04-21 19:49:23,974 INFO  utils.LoggerHandler - Clicked on Continue
+ 2025-04-21 19:49:31,307 INFO  utils.LoggerHandler - Data inserted for Street Address
+ 2025-04-21 19:49:31,795 INFO  utils.LoggerHandler - Data inserted for City
+ 2025-04-21 19:49:31,889 INFO  utils.LoggerHandler - Data inserted for State
+ 2025-04-21 19:49:32,045 INFO  utils.LoggerHandler - Data inserted for Zip Code
+ 2025-04-21 19:49:32,188 INFO  utils.LoggerHandler - Clicked on Continue
+ 2025-04-21 19:49:47,831 INFO  utils.LoggerHandler - Data inserted for Residential Status
+ 2025-04-21 19:49:49,494 INFO  utils.LoggerHandler - Data inserted for Monthly Income
+ 2025-04-21 19:49:49,688 INFO  utils.LoggerHandler - Data inserted for Total Income
+ 2025-04-21 19:49:49,848 INFO  utils.LoggerHandler - Clicked on Continue
+ 
