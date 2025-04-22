@@ -186,6 +186,18 @@ public class HomeDepotServicesPage {
         }
     }
 
+    public void navigateBackToPreviousPage(){
+        try{
+            helper.navigateBack();
+            LoggerHandler.info("Navigated back to Previous Page");
+            test.log(Status.PASS, "Navigated back to Previous Page");
+        }catch(Exception e){
+            e.printStackTrace();
+            LoggerHandler.error("Not able to Navigate back to Previous Page");
+            test.log(Status.FAIL, "Not able to Navigate back to Previous Page");
+        }
+    }
+
     public void testCase3(){
         try {
             clickOnServicesIcon();
@@ -195,16 +207,16 @@ public class HomeDepotServicesPage {
             verifyHomeServicesText();
             clickOnFlooring();
             verifyFlooringText();
-            Base.driver.navigate().back();
+            navigateBackToPreviousPage();
             clickOnBathroom();
             verifyBathroomText();
-            Base.driver.navigate().back();
+            navigateBackToPreviousPage();
             clickOnDoorsAndWindows();
             verifyWindowServicesText();
-            Base.driver.navigate().back();
+            navigateBackToPreviousPage();
             clickOnHeating();
             verifyHeatingText();
-            Base.driver.navigate().back();
+            navigateBackToPreviousPage();
             Thread.sleep(3000);
             Screenshot.captureScreenShot("Test Case 3 Screenshot Captured");
             Reporter.attachScreenshotToReport("Report Test Case 3 Screenshot", test, "Capture and stored in report");
