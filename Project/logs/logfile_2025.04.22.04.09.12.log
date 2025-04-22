@@ -1,0 +1,27 @@
+2025-04-22 04:09:12,633 INFO  utils.LoggerHandler - Scroll to Shop By Category
+ 2025-04-22 04:09:18,480 INFO  utils.LoggerHandler - Click on Building Materials
+ 2025-04-22 04:09:20,685 INFO  utils.LoggerHandler - Verify on Building Materials
+ 2025-04-22 04:09:29,194 INFO  utils.LoggerHandler - Click on Building Materials
+ 2025-04-22 04:09:33,981 INFO  utils.LoggerHandler - Click on concrete
+ 2025-04-22 04:09:35,390 INFO  utils.LoggerHandler - Verify on Concrete
+ 2025-04-22 04:09:43,495 INFO  utils.LoggerHandler - Click on decking
+ 2025-04-22 04:09:44,920 INFO  utils.LoggerHandler - Verify on Decking
+ 2025-04-22 04:09:53,608 INFO  utils.LoggerHandler - Click on insulation
+ 2025-04-22 04:09:54,993 INFO  utils.LoggerHandler - Verify on Insulation
+ 2025-04-22 04:10:03,782 INFO  utils.LoggerHandler - Click on drywall
+ 2025-04-22 04:10:05,709 INFO  utils.LoggerHandler - Verify on Drywall
+ 2025-04-22 04:10:09,409 INFO  utils.LoggerHandler - Click on shop all drywall
+ 2025-04-22 04:10:13,646 INFO  utils.LoggerHandler - Click on allFilters
+ 2025-04-22 04:10:28,886 INFO  utils.LoggerHandler - Click on Store Locator
+ 2025-04-22 04:10:30,829 INFO  utils.LoggerHandler - verify store locator
+ 2025-04-22 04:10:38,199 INFO  utils.LoggerHandler - Click on Privacy
+ 2025-04-22 04:10:38,477 INFO  utils.LoggerHandler - verify Privacy & Security Center
+ 2025-04-22 04:10:49,179 INFO  utils.LoggerHandler - click on terms
+ 2025-04-22 04:10:50,138 INFO  utils.LoggerHandler - verify terms
+ 2025-04-22 04:10:58,983 INFO  utils.LoggerHandler - click on preference
+ 2025-04-22 04:10:59,377 INFO  utils.LoggerHandler - verify preference
+ 2025-04-22 04:11:08,188 INFO  utils.LoggerHandler - click on sitemap
+ 2025-04-22 04:11:08,374 INFO  utils.LoggerHandler - verify sitemap
+ 2025-04-22 04:11:15,975 INFO  utils.LoggerHandler - click on StoreDirectory
+ 2025-04-22 04:11:16,178 INFO  utils.LoggerHandler - verify StoreDirectory
+ 
