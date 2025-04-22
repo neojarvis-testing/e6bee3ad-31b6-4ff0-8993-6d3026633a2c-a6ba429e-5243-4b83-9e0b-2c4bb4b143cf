@@ -54,14 +54,14 @@ public class TestHomeDepot extends Base {
     public void servicesPageTestcases() {
         test = reports.createTest("Services Testcases");
         HomeDepotServicesPage homeDepotServicesPage = new HomeDepotServicesPage(test);
-        homeDepotServicesPage.testCase3();
+        homeDepotServicesPage.testServicesFlow();
     }
 
     @Test(priority = 4, enabled = true)
     public void workshopTestcases() {
         test = reports.createTest("Workshop Testcases");
         HomeDepotDIYWorkShopPage homeDepotDIYWorkShopPage = new HomeDepotDIYWorkShopPage(test);
-        homeDepotDIYWorkShopPage.testCase4();
+        homeDepotDIYWorkShopPage.testDIYWorkshops();
     }
 
     @Test(priority = 5, enabled = true)
