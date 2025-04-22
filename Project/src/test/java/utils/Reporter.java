@@ -15,7 +15,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.google.common.io.Files;
+
 
 public class Reporter extends Base{
     public static TakesScreenshot ts;
@@ -57,4 +57,5 @@ public class Reporter extends Base{
             e.printStackTrace();
         }
     }
+    
 }

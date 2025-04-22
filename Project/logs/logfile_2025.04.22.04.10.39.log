@@ -1,0 +1,38 @@
+2025-04-22 04:10:39,886 INFO  utils.LoggerHandler - Clicked on Careers
+ 2025-04-22 04:10:39,903 INFO  utils.LoggerHandler - Verified url for Careers
+ 2025-04-22 04:10:47,933 INFO  utils.LoggerHandler - Clicked on Corporate Information
+ 2025-04-22 04:10:47,948 INFO  utils.LoggerHandler - Verified url for Corporate Information
+ 2025-04-22 04:10:55,418 INFO  utils.LoggerHandler - Clicked on Digital Newsroom
+ 2025-04-22 04:10:55,519 ERROR utils.LoggerHandler - Not Verified url for Digital Newsroom
+ 2025-04-22 04:11:02,710 INFO  utils.LoggerHandler - Clicked on Home Depot Foundation
+ 2025-04-22 04:11:02,836 ERROR utils.LoggerHandler - Not Verified url for Depot Foundation
+ 2025-04-22 04:11:14,792 INFO  utils.LoggerHandler - Clicked on Investor Relations
+ 2025-04-22 04:11:14,808 INFO  utils.LoggerHandler - Verified url for Investor Relations
+ 2025-04-22 04:11:23,318 INFO  utils.LoggerHandler - Clicked on Government Customers
+ 2025-04-22 04:11:24,153 INFO  utils.LoggerHandler - Verified url for Government Customers
+ 2025-04-22 04:11:33,320 INFO  utils.LoggerHandler - Clicked on Suppliers & Providers
+ 2025-04-22 04:11:33,754 INFO  utils.LoggerHandler - Verified url for Suppliers & Providers
+ 2025-04-22 04:11:42,701 INFO  utils.LoggerHandler - Clicked on Affiliate Program
+ 2025-04-22 04:11:43,128 INFO  utils.LoggerHandler - Verified url for Affiliate Program
+ 2025-04-22 04:11:51,990 INFO  utils.LoggerHandler - Clicked on Eco Actions
+ 2025-04-22 04:11:52,718 INFO  utils.LoggerHandler - Verified url for Eco Actions
+ 2025-04-22 04:12:05,028 INFO  utils.LoggerHandler - Clicked on Credit Offers
+ 2025-04-22 04:12:06,252 INFO  utils.LoggerHandler - Verified text CREDIT CARD SERVICES
+ 2025-04-22 04:12:09,160 INFO  utils.LoggerHandler - Clicked on Apply Now
+ 2025-04-22 04:12:15,937 INFO  utils.LoggerHandler - Data inserted for First Name
+ 2025-04-22 04:12:16,141 INFO  utils.LoggerHandler - Data inserted for Last Name
+ 2025-04-22 04:12:16,425 INFO  utils.LoggerHandler - Data inserted for Email Address
+ 2025-04-22 04:12:16,650 INFO  utils.LoggerHandler - Data inserted for Mobile Number
+ 2025-04-22 04:12:16,927 INFO  utils.LoggerHandler - Clicked on Continue
+ 2025-04-22 04:12:17,220 INFO  utils.LoggerHandler - Clicked on Continue
+ 2025-04-22 04:12:17,764 INFO  utils.LoggerHandler - Data inserted for Street Address
+ 2025-04-22 04:12:18,310 INFO  utils.LoggerHandler - Data inserted for City
+ 2025-04-22 04:12:18,543 INFO  utils.LoggerHandler - Data inserted for State
+ 2025-04-22 04:12:18,759 INFO  utils.LoggerHandler - Data inserted for Zip Code
+ 2025-04-22 04:12:18,969 INFO  utils.LoggerHandler - Clicked on Continue
+ 2025-04-22 04:12:19,433 INFO  utils.LoggerHandler - Data inserted for Residential Status
+ 2025-04-22 04:12:19,718 INFO  utils.LoggerHandler - Data inserted for Monthly Income
+ 2025-04-22 04:12:20,031 INFO  utils.LoggerHandler - Data inserted for Total Income
+ 2025-04-22 04:12:20,212 INFO  utils.LoggerHandler - Clicked on Continue
+ 2025-04-22 04:12:20,347 INFO  utils.LoggerHandler - Clicked on Continue
+ 
