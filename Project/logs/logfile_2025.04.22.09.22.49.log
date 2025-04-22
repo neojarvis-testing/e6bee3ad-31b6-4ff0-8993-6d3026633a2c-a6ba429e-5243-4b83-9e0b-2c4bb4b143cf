@@ -1,0 +1,22 @@
+2025-04-22 09:22:49,514 INFO  utils.LoggerHandler - User Clicked on Service Icon
+ 2025-04-22 09:22:49,657 INFO  utils.LoggerHandler - Verified the Text'Services'
+ 2025-04-22 09:22:50,109 INFO  utils.LoggerHandler - User Clicked on Installation & Services
+ 2025-04-22 09:22:54,128 INFO  utils.LoggerHandler - User Clicked on View All Installation & Services
+ 2025-04-22 09:22:55,576 INFO  utils.LoggerHandler - Verified the Text'Home Services'
+ 2025-04-22 09:22:56,217 INFO  utils.LoggerHandler - User Clicked on Flooring
+ 2025-04-22 09:22:57,398 INFO  utils.LoggerHandler - Verified the Text'Flooring Installation'
+ 2025-04-22 09:22:58,523 INFO  utils.LoggerHandler - User Clicked on Bathroom
+ 2025-04-22 09:22:59,519 INFO  utils.LoggerHandler - Verified the Text'Bathroom Installation Services'
+ 2025-04-22 09:23:00,600 INFO  utils.LoggerHandler - User Clicked on Doors & Windows
+ 2025-04-22 09:23:01,609 INFO  utils.LoggerHandler - Verified the Text'Window & Door Services'
+ 2025-04-22 09:23:02,741 INFO  utils.LoggerHandler - User Clicked on Heating & Cooling
+ 2025-04-22 09:23:03,639 INFO  utils.LoggerHandler - Verified the Text'HVAC Services'
+ 2025-04-22 09:23:16,721 INFO  utils.LoggerHandler - Clicked on DIY Icon
+ 2025-04-22 09:23:17,242 INFO  utils.LoggerHandler - Clicked on 'Free WorkShops'
+ 2025-04-22 09:23:17,305 INFO  utils.LoggerHandler - Verified the Text'Free Workshops'
+ 2025-04-22 09:23:20,811 INFO  utils.LoggerHandler - Clicked on 'Kids Workshops'
+ 2025-04-22 09:23:22,370 INFO  utils.LoggerHandler - Verified the Text'Kids Workshops'
+ 2025-04-22 09:23:27,809 INFO  utils.LoggerHandler - Clicked on 'Learn More'
+ 2025-04-22 09:23:28,997 INFO  utils.LoggerHandler - Verified the Page Title'Free DIY Workshops & Classes'
+ 2025-04-22 09:23:30,008 INFO  utils.LoggerHandler - Clicked on 'Register Now'
+ 
