@@ -1,0 +1,6 @@
+2025-04-22 04:16:13,535 INFO  utils.LoggerHandler - Clicked on Specials & Offers
+ 2025-04-22 04:16:13,840 INFO  utils.LoggerHandler - URL contains /c/Savings_Center
+ 2025-04-22 04:16:17,950 INFO  utils.LoggerHandler - Clicked on Military Discount Benefit
+ 2025-04-22 04:16:18,044 INFO  utils.LoggerHandler - URL contains /c/military
+ 2025-04-22 04:16:21,179 INFO  utils.LoggerHandler - Clicked on DIY Projects And Ideas
+ 
