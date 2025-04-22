@@ -4,8 +4,6 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
-import uistore.HomeDepotAboutUsFooterPageLocator;
 import uistore.HomeDepotCreditOffersPageLocator;
 import utils.Base;
 import utils.ExcelReader;
