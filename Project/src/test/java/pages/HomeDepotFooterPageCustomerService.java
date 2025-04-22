@@ -33,7 +33,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyOrderStatus(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/myaccount/guest-order-tracking"));
             LoggerHandler.info("URL contains /myaccount/guest-order-tracking");
             test.log(Status.INFO, "URL contains /myaccount/guest-order-tracking");
@@ -56,7 +56,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyCreditCenter(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/credit-center"));
             LoggerHandler.info("URL contains /c/credit-center");
             test.log(Status.INFO, "URL contains /c/credit-center");
@@ -79,7 +79,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyCustomerCenter(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/Customer_Support_Answers#cancel"));
             LoggerHandler.info("URL contains /c/Customer_Support_Answers#cancel");
             test.log(Status.INFO, "URL contains /c/Customer_Support_Answers#cancel");
@@ -102,7 +102,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyReturnPolicy(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/Return_Policy"));
             LoggerHandler.info("URL contains /c/Return_Policy");
             test.log(Status.INFO, "URL contains /c/Return_Policy");
@@ -125,7 +125,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyRefundPolicy(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/refund-policy"));
             LoggerHandler.info("URL contains /c/refund-policy");
             test.log(Status.INFO, "URL contains /c/refund-policy");
@@ -148,7 +148,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyOnlineOrder(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/About_Your_Online_Order"));
             LoggerHandler.info("URL contains /c/About_Your_Online_Order");
             test.log(Status.INFO, "URL contains /c/About_Your_Online_Order");
@@ -171,7 +171,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyProductRecalls(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/Product_Recalls"));
             LoggerHandler.info("URL contains /c/Product_Recalls");
             test.log(Status.INFO, "URL contains /c/Product_Recalls");
@@ -194,7 +194,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyMyPreferenceCenter(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("privacy/MyPreferenceCenter"));
             LoggerHandler.info("URL contains privacy/MyPreferenceCenter");
             test.log(Status.INFO, "URL contains privacy/MyPreferenceCenter");
@@ -217,7 +217,7 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void VerifyPrivacyOverview(){
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("privacy/overview"));
             LoggerHandler.info("URL contains privacy/overview");
             test.log(Status.INFO, "URL contains privacy/overview");

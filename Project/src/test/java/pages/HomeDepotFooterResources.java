@@ -37,7 +37,7 @@ public class HomeDepotFooterResources {
 
     public void VerifySavingsCenter() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/Savings_Center"));
             LoggerHandler.info("URL contains /c/Savings_Center");
             test.log(Status.INFO, "URL contains /c/Savings_Center");
@@ -62,7 +62,7 @@ public class HomeDepotFooterResources {
 
     public void VerifyMilitary() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/military"));
             LoggerHandler.info("URL contains /c/military");
             test.log(Status.INFO, "URL contains /c/military");
@@ -87,7 +87,7 @@ public class HomeDepotFooterResources {
 
     public void VerifyDIYProject() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/diy_projects_and_ideas"));
             LoggerHandler.info("URL contains /c/diy_projects_and_ideas");
             test.log(Status.INFO, "URL contains /c/diy_projects_and_ideas");
@@ -112,7 +112,7 @@ public class HomeDepotFooterResources {
 
     public void VerifyToolAndTruck() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/tool-and-equipment-rental"));
             LoggerHandler.info("URL contains /c/tool_and_truck_rental");
             test.log(Status.INFO, "URL contains /c/tool_and_truck_rental");
@@ -137,7 +137,7 @@ public class HomeDepotFooterResources {
 
     public void VerifyServices() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/services"));
             LoggerHandler.info("URL contains /services");
             test.log(Status.INFO, "URL contains /services");
@@ -162,7 +162,7 @@ public class HomeDepotFooterResources {
 
     public void VerifyStorageOrganization() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r"));
             LoggerHandler.info("URL contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r");
             test.log(Status.INFO, "URL contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r");
@@ -187,7 +187,7 @@ public class HomeDepotFooterResources {
 
     public void VerifyProtectionPlans() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/The_Home_Depot_Protection_Plans"));
             LoggerHandler.info("URL contains /c/The_Home_Depot_Protection_Plans");
             test.log(Status.INFO, "URL contains /c/The_Home_Depot_Protection_Plans");
@@ -211,7 +211,7 @@ public class HomeDepotFooterResources {
     }
     public void VerifyRebate() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/rebate-center/index.html"));
             LoggerHandler.info("URL contains /rebate-center/index.html");
             test.log(Status.INFO, "URL contains /rebate-center/index.html");
@@ -234,7 +234,7 @@ public class HomeDepotFooterResources {
     }
     public void Verifygiftcard() {
         try {
-            String text = Base.driver.getCurrentUrl();
+            String text = helper.getUrl();
             Assert.assertTrue(text.contains("/c/gift-cards"));
             Screenshot.captureScreenShot("Resources");
             Reporter.attachScreenshotToReport("Resources", test, "Attached");
