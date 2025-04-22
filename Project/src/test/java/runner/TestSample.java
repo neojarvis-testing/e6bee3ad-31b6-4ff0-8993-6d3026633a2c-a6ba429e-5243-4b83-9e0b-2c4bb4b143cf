@@ -33,14 +33,14 @@ public class TestSample extends Base{
 
 
 
-    // @Test
+    @Test(enabled = false)
     public void CustomerService(){
         test = report.createTest("Customer services");
         HomeDepotFooterPageCustomerService hdfc = new HomeDepotFooterPageCustomerService(test);
         hdfc.CustomerService();
     }
 
-    @Test
+    @Test(enabled = true)
     public void Resources(){
         test = report.createTest("Resources");
         HomeDepotFooterResources homeDepotFooterResources = new HomeDepotFooterResources(test);

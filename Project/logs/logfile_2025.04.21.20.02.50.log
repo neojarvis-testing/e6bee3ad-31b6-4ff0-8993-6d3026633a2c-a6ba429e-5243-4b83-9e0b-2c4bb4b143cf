@@ -1,8 +1,0 @@
-2025-04-21 20:02:50,879 INFO  utils.LoggerHandler - Clicked on Specials & Offers
- 2025-04-21 20:02:50,984 INFO  utils.LoggerHandler - URL contains /c/Savings_Center
- 2025-04-21 20:02:56,472 INFO  utils.LoggerHandler - Clicked on Military Discount Benefit
- 2025-04-21 20:02:56,571 INFO  utils.LoggerHandler - URL contains /c/military
- 2025-04-21 20:03:01,566 INFO  utils.LoggerHandler - Clicked on DIY Projects And Ideas
- 2025-04-21 20:03:03,952 INFO  utils.LoggerHandler - URL contains /c/diy_projects_and_ideas
- 2025-04-21 20:03:10,054 INFO  utils.LoggerHandler - Clicked on Truck and Tool Rental
- 
