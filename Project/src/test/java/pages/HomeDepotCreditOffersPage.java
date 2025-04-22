@@ -201,7 +201,7 @@ public class HomeDepotCreditOffersPage {
             String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 10, 0);
             helper.waitForElementToBeVisible(HomeDepotCreditOffersPageLocator.totalIncome, 10);
             helper.sendData(HomeDepotCreditOffersPageLocator.totalIncome,excelData);
-            Thread.sleep(2000);
+            // Thread.sleep(2000);
             Screenshot.captureScreenShot("Annual Income");
             LoggerHandler.info("Data inserted for Total Income");
             test.log(Status.PASS, "Data inserted for Total Income");

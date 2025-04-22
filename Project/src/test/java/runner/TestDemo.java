@@ -19,22 +19,22 @@ public class TestDemo extends Base{
     ExtentTest test;
     @BeforeClass
     public void reportGenerate(){
-        report = Reporter.generateExtentReports("HomeDepot_Report");
+        report = Reporter.generateExtentReports("HOMEDEPOT_Report");
     }
 
     @BeforeMethod
     public void open(){
         openBrowser();
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void test1(){
-        test = report.createTest("Test1");
+        test = report.createTest("AboutUsFooterPage");
         HomeDepotAboutUsFooterPage aboutUsFooterPage = new HomeDepotAboutUsFooterPage(test);
         aboutUsFooterPage.aboutUsFooterFlow();
     }
     @Test(enabled = true)
         public void test2(){
-            test = report.createTest("Test2");
+            test = report.createTest("CreditOffersPage");
             HomeDepotCreditOffersPage homeDepotCreditOffersPage = new HomeDepotCreditOffersPage(test);
             homeDepotCreditOffersPage.creditOffersFlow();
     }
