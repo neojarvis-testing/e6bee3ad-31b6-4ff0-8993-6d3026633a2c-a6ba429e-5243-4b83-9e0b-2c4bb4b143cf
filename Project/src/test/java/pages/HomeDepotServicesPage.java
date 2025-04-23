@@ -19,7 +19,6 @@ public class HomeDepotServicesPage {
     public HomeDepotServicesPage(ExtentTest test){
         helper = new WebDriverHelper(Base.driver);
         this.test= test;
-
     }
 
     /*
@@ -47,20 +46,20 @@ public class HomeDepotServicesPage {
     /*
      * a. Method Name: verifyServicesText
      * b. Author Name: Sri Ramya Paladi
-     * c. Description: Verifies the presence of the 'Services' text.
+     * c. Description: Verifies the presence of the Services text.
      * d. Return Type: void
      * e. Parameters: None
      */
     public void verifyServicesText(){
         try {
-            String actual = helper.getText(HomeDepotServicesPageLocator.verifyServices);
+            String actual = helper.getText(HomeDepotServicesPageLocator.services);
             String expected  = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 0, 0);
             Assert.assertEquals(actual, expected);
-            LoggerHandler.info("Verified the Text'Services'");
-            test.log(Status.PASS, "Verified the Text 'Services'");
+            LoggerHandler.info("Verified the TextServices");
+            test.log(Status.PASS, "Verified the Text Services");
         } catch (Exception e) {
-            LoggerHandler.error("Unable to verify the Text 'Services'");
-            test.log(Status.FAIL, "Unable to verify the Text 'Services'");
+            LoggerHandler.error("Unable to verify the Text Services");
+            test.log(Status.FAIL, "Unable to verify the Text Services");
         }
     }
 
@@ -73,9 +72,9 @@ public class HomeDepotServicesPage {
      */
     public void clickOnInstallation(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.clickInstallation, 10);
-            helper.clickOnElement(HomeDepotServicesPageLocator.clickInstallation);
-            String actual = helper.getText(HomeDepotServicesPageLocator.clickInstallation);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.installation, 10);
+            helper.clickOnElement(HomeDepotServicesPageLocator.installation);
+            String actual = helper.getText(HomeDepotServicesPageLocator.installation);
             String expected = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 1, 0);
             Assert.assertTrue(actual.contains(expected));
             LoggerHandler.info("User Clicked on Installation & Services");
@@ -89,7 +88,7 @@ public class HomeDepotServicesPage {
     /*
      * a. Method Name: clickOnViewAllInstallation
      * b. Author Name: Sri Ramya Paladi
-     * c. Description: Clicks on the 'View All Installation & Services' link.
+     * c. Description: Clicks on the View All Installation & Services link.
      * d. Return Type: void
      * e. Parameters: None
      */
@@ -111,20 +110,20 @@ public class HomeDepotServicesPage {
     /*
      * a. Method Name: verifyHomeServicesText
      * b. Author Name: Sri Ramya Paladi
-     * c. Description: Verifies the presence of the 'Home Services' text.
+     * c. Description: Verifies the presence of the Home Services text.
      * d. Return Type: void
      * e. Parameters: None
      */
     public void verifyHomeServicesText(){
         try {
-            String actual = helper.getText(HomeDepotServicesPageLocator.verifyHomeServices);
+            String actual = helper.getText(HomeDepotServicesPageLocator.homeServices);
             String expected  = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 0, 1);
             Assert.assertEquals(actual, expected);
-            LoggerHandler.info("Verified the Text'Home Services'");
-            test.log(Status.PASS, "Verified the Text 'Home Services'");
+            LoggerHandler.info("Verified the TextHome Services");
+            test.log(Status.PASS, "Verified the Text Home Services");
         } catch (Exception e) {
-            LoggerHandler.error("Unable to verify the Text 'Home Services'");
-            test.log(Status.FAIL, "Unable to verify the Text 'Home Services'");
+            LoggerHandler.error("Unable to verify the Text Home Services");
+            test.log(Status.FAIL, "Unable to verify the Text Home Services");
         }
     }
 
@@ -137,9 +136,9 @@ public class HomeDepotServicesPage {
      */
     public void clickOnFlooring(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.clickFlooring, 10);
-            helper.clickOnElement(HomeDepotServicesPageLocator.clickFlooring);
-            String actual = helper.getText(HomeDepotServicesPageLocator.clickFlooring);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.flooring, 10);
+            helper.clickOnElement(HomeDepotServicesPageLocator.flooring);
+            String actual = helper.getText(HomeDepotServicesPageLocator.flooring);
             String expected = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 3, 0);
             Assert.assertEquals(actual,expected);
             LoggerHandler.info("User Clicked on Flooring");
@@ -153,20 +152,20 @@ public class HomeDepotServicesPage {
     /*
      * a. Method Name: verifyFlooringText
      * b. Author Name: Sri Ramya Paladi
-     * c. Description: Verifies the presence of the 'Flooring Installation' text.
+     * c. Description: Verifies the presence of the Flooring Installation text.
      * d. Return Type: void
      * e. Parameters: None
      */
     public void verifyFlooringText(){
         try {
-            String actual = helper.getText(HomeDepotServicesPageLocator.verifyFlooring);
+            String actual = helper.getText(HomeDepotServicesPageLocator.floorings);
             String expected  = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 1, 1);
             Assert.assertEquals(actual, expected);
-            LoggerHandler.info("Verified the Text'Flooring Installation'");
-            test.log(Status.PASS, "Verified the Text 'Flooring Installation'");
+            LoggerHandler.info("Verified the TextFlooring Installation");
+            test.log(Status.PASS, "Verified the Text Flooring Installation");
         } catch (Exception e) {
-            LoggerHandler.error("Unable to verify the Text 'Flooring Installation'");
-            test.log(Status.FAIL, "Unable to verify the Text 'Flooring Installation'");
+            LoggerHandler.error("Unable to verify the Text Flooring Installation");
+            test.log(Status.FAIL, "Unable to verify the Text Flooring Installation");
         }
     }
 
@@ -179,9 +178,9 @@ public class HomeDepotServicesPage {
      */
     public void clickOnBathroom(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.clickBathroom, 10);
-            helper.clickOnElement(HomeDepotServicesPageLocator.clickBathroom);
-            String actual = helper.getText(HomeDepotServicesPageLocator.clickBathroom);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.bathroom, 10);
+            helper.clickOnElement(HomeDepotServicesPageLocator.bathroom);
+            String actual = helper.getText(HomeDepotServicesPageLocator.bathroom);
             String expected = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 4, 0);
             Assert.assertEquals(actual,expected);
             LoggerHandler.info("User Clicked on Bathroom");
@@ -195,21 +194,21 @@ public class HomeDepotServicesPage {
     /*
      * a. Method Name: verifyBathroomText
      * b. Author Name: Sri Ramya Paladi
-     * c. Description: Verifies the presence of the 'Bathroom Installation Services' text.
+     * c. Description: Verifies the presence of the Bathroom Installation Services text.
      * d. Return Type: void
      * e. Parameters: None
      */
     public void verifyBathroomText(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.verifyBathroom, 10);
-            String actual = helper.getText(HomeDepotServicesPageLocator.verifyBathroom);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.bathrooms, 10);
+            String actual = helper.getText(HomeDepotServicesPageLocator.bathrooms);
             String expected  = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 2, 1);
             Assert.assertEquals(actual, expected);
-            LoggerHandler.info("Verified the Text'Bathroom Installation Services'");
-            test.log(Status.PASS, "Verified the Text 'Bathroom Installation Services'");
+            LoggerHandler.info("Verified the TextBathroom Installation Services");
+            test.log(Status.PASS, "Verified the Text Bathroom Installation Services");
         } catch (Exception e) {
-            LoggerHandler.error("Unable to verify the Text 'Bathroom Installation Services'");
-            test.log(Status.FAIL, "Unable to verify the Text 'Bathroom Installation Services'");
+            LoggerHandler.error("Unable to verify the Text Bathroom Installation Services");
+            test.log(Status.FAIL, "Unable to verify the Text Bathroom Installation Services");
         }
     }
 
@@ -222,9 +221,9 @@ public class HomeDepotServicesPage {
      */
     public void clickOnDoorsAndWindows(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.clickDoorsWindows, 10);
-            helper.clickOnElement(HomeDepotServicesPageLocator.clickDoorsWindows);
-            String actual = helper.getText(HomeDepotServicesPageLocator.clickDoorsWindows);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.doorsWindows, 10);
+            helper.clickOnElement(HomeDepotServicesPageLocator.doorsWindows);
+            String actual = helper.getText(HomeDepotServicesPageLocator.doorsWindows);
             String expected = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 5, 0);
             Assert.assertEquals(actual,expected);
             LoggerHandler.info("User Clicked on Doors & Windows");
@@ -238,21 +237,21 @@ public class HomeDepotServicesPage {
     /*
      * a. Method Name: verifyWindowServicesText
      * b. Author Name: Sri Ramya Paladi
-     * c. Description: Verifies the presence of the 'Window & Door Services' text.
+     * c. Description: Verifies the presence of the Window & Door Services text.
      * d. Return Type: void
      * e. Parameters: None
      */
     public void verifyWindowServicesText(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.verifyWindowDoorServices, 10);
-            String actual = helper.getText(HomeDepotServicesPageLocator.verifyWindowDoorServices);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.windowDoorServices, 10);
+            String actual = helper.getText(HomeDepotServicesPageLocator.windowDoorServices);
             String expected  = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 3, 1);
             Assert.assertEquals(actual, expected);
-            LoggerHandler.info("Verified the Text'Window & Door Services'");
-            test.log(Status.PASS, "Verified the Text 'Window & Door Services'");
+            LoggerHandler.info("Verified the TextWindow & Door Services");
+            test.log(Status.PASS, "Verified the Text Window & Door Services");
         } catch (Exception e) {
-            LoggerHandler.error("Unable to verify the Text 'Window & Door Services'");
-            test.log(Status.FAIL, "Unable to verify the Text 'Window & Door Services'");
+            LoggerHandler.error("Unable to verify the Text Window & Door Services");
+            test.log(Status.FAIL, "Unable to verify the Text Window & Door Services");
         }
     }
 
@@ -265,9 +264,9 @@ public class HomeDepotServicesPage {
     */
     public void clickOnHeating(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.clickHeating, 10);
-            helper.clickOnElement(HomeDepotServicesPageLocator.clickHeating);
-            String actual = helper.getText(HomeDepotServicesPageLocator.clickHeating);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.heating, 10);
+            helper.clickOnElement(HomeDepotServicesPageLocator.heating);
+            String actual = helper.getText(HomeDepotServicesPageLocator.heating);
             String expected = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 6, 0);
             Assert.assertEquals(actual,expected);
             LoggerHandler.info("User Clicked on Heating & Cooling");
@@ -281,21 +280,21 @@ public class HomeDepotServicesPage {
     /*
      * a. Method Name: verifyHeatingText
      * b. Author Name: Sri Ramya Paladi
-     * c. Description: Verifies the presence of the 'HVAC Services' text.
+     * c. Description: Verifies the presence of the HVAC Services text.
      * d. Return Type: void
      * e. Parameters: None
      */
     public void verifyHeatingText(){
         try {
-            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.verifyHVACServices,10);
-            String actual = helper.getText(HomeDepotServicesPageLocator.verifyHVACServices);
+            helper.waitForElementToBeVisible(HomeDepotServicesPageLocator.hvacServices,10);
+            String actual = helper.getText(HomeDepotServicesPageLocator.hvacServices);
             String expected  = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/ServicesExcel.xlsx", "Sheet1", 4, 1);
             Assert.assertEquals(actual, expected);
-            LoggerHandler.info("Verified the Text'HVAC Services'");
-            test.log(Status.PASS, "Verified the Text 'HVAC Services'");
+            LoggerHandler.info("Verified the TextHVAC Services");
+            test.log(Status.PASS, "Verified the Text HVAC Services");
         } catch (Exception e) {
-            LoggerHandler.error("Unable to verify the Text 'HVAC Services'");
-            test.log(Status.FAIL, "Unable to verify the Text 'HVAC Services'");
+            LoggerHandler.error("Unable to verify the Text HVAC Services");
+            test.log(Status.FAIL, "Unable to verify the Text HVAC Services");
         }
     }
 
@@ -338,8 +337,8 @@ public class HomeDepotServicesPage {
             verifyHeatingText();
             navigateBackToPreviousPage();
             Thread.sleep(3000);
-            Screenshot.captureScreenShot("Test Case 3 Screenshot Captured");
-            Reporter.attachScreenshotToReport("Report Test Case 3 Screenshot", test, "Capture and stored in report");
+            Screenshot.captureScreenShot("Screenshot Captured");
+            Reporter.attachScreenshotToReport("Test Screenshot", test, "Capture and stored in report");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
