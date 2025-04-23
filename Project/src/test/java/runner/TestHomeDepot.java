@@ -66,7 +66,7 @@ public class TestHomeDepot extends Base {
     }
 
     /*
-     * a. Method Name: categoryTestCase
+     * a. Method Name: shopAllTestCase
      * b. Author Name: Jaya vardhan Raju G
      * c. Description: Home Depot Shop All TestCase
      * d. Return Type: void
