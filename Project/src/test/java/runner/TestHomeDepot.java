@@ -92,19 +92,31 @@ public class TestHomeDepot extends Base {
         HomeDepotDIYWorkShopPage homeDepotDIYWorkShopPage = new HomeDepotDIYWorkShopPage(test);
         homeDepotDIYWorkShopPage.testDIYWorkshops();
     }
-
+    /*
+     * a. Method Name: CustomerServiceTestCase
+     * b. Author Name: Kushal
+     * c. Description: Home Depot Customer Service All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 5, enabled = true)
     public void CustomerServiceTestCase() {
         test = reports.createTest("Customer Services TestCase");
-        HomeDepotFooterPageCustomerService hdfc = new HomeDepotFooterPageCustomerService(test);
-        hdfc.CustomerService();
+        HomeDepotFooterPageCustomerService homeDepotFooterPageCustomerService = new HomeDepotFooterPageCustomerService(test);
+        homeDepotFooterPageCustomerService.customerServiceTestCase();
     }
-
+    /*
+     * a. Method Name: resourcesTestCase
+     * b. Author Name: Kushal
+     * c. Description: Home Depot Resources All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 6, enabled = true)
     public void resourcesTestCase() {
         test = reports.createTest("Resources TestCase");
         HomeDepotFooterResources homeDepotFooterResources = new HomeDepotFooterResources(test);
-        homeDepotFooterResources.Resources();
+        homeDepotFooterResources.resourcesTestCase();
     }
 
     @Test(priority = 7, enabled = true)

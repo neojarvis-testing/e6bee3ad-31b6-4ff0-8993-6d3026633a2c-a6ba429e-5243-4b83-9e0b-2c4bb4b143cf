@@ -202,13 +202,13 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /c/refund-policy");
         }
     }
-    /* a. Method Name: clickOnShippingandDelivery. 
+    /* a. Method Name: clickOnShippingAndDelivery. 
      * b. Author Name: Kushal
      * c. Description: Clicks on Shipping & Delivery in the footer section.
      * d. Return Type: void
      * e. Parameters:None
      */
-    public void clickOnShippingandDelivery(){
+    public void clickOnShippingAndDelivery(){
         try {
             helper.scrollToEnd();
             helper.waitForElementToBeVisible(HomeDepotFooterLocator.shippingDelivery, 10);
@@ -348,7 +348,7 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains privacy/overview");
         }
     }
-    public void CustomerService(){
+    public void customerServiceTestCase(){
         clickOnCheckOrderStatus();
         verifyOrderStatus();
         clickOnPayYourCreditCard();
@@ -359,7 +359,7 @@ public class HomeDepotFooterPageCustomerService {
         verifyReturnPolicy();
         clickOnRefundPolicy();
         verifyRefundPolicy();
-        clickOnShippingandDelivery();
+        clickOnShippingAndDelivery();
         verifyOnlineOrder();
         clickOnProductRecalls();
         verifyProductRecalls();

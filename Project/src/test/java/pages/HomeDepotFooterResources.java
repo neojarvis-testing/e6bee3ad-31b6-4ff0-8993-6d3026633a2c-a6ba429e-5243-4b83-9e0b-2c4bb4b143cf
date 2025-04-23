@@ -327,13 +327,13 @@ public class HomeDepotFooterResources {
             test.log(Status.FAIL, "Not clicked on Gift Cards");
         }
     }
-    /* a. Method Name: verifygiftcard
+    /* a. Method Name: verifyGiftCard
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on Gift Cards.
      * d. Return Type: void
      * e. Parameters:None
      */
-    public void verifygiftcard() {
+    public void verifyGiftCard() {
         try {
             String text = helper.getUrl();
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 8, 0);
@@ -347,7 +347,7 @@ public class HomeDepotFooterResources {
             test.log(Status.FAIL, "URL doesn't contains /c/gift-cards");
         }
     }
-    public void Resources(){
+    public void resourcesTestCase(){
         clickOnSpecialsOffers();
         verifySavingsCenter();
         clickOnMilitaryDiscountBenefit();
@@ -365,6 +365,6 @@ public class HomeDepotFooterResources {
         clickOnRebateCenter();
         verifyRebate();
         clickOnGiftCards();
-        verifygiftcard();
+        verifyGiftCard();
     }
 }
