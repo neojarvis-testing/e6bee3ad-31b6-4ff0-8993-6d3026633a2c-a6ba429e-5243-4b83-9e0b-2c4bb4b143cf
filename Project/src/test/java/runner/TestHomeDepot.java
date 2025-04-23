@@ -79,18 +79,32 @@ public class TestHomeDepot extends Base {
         homeDepotShopAll.homeDepotShopAllTestCase();
     }
 
+    /*
+     * a. Method Name: servicesPageTestCase
+     * b. Author Name: Sri Ramya Paladi
+     * c. Description: Test case for Home Depot Services Page functionality.
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 3, enabled = true)
     public void servicesPageTestCase() {
         test = reports.createTest("Services TestCase");
         HomeDepotServicesPage homeDepotServicesPage = new HomeDepotServicesPage(test);
-        homeDepotServicesPage.testServicesFlow();
+        homeDepotServicesPage.homeDepotServicesPageTestCase();
     }
 
+    /*
+     * a. Method Name: workshopTestCase
+     * b. Author Name: Sri Ramya Paladi
+     * c. Description: Test case for Home Depot DIY Workshop Page functionality.
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 4, enabled = true)
     public void workshopTestCase() {
         test = reports.createTest("Workshop TestCase");
         HomeDepotDIYWorkShopPage homeDepotDIYWorkShopPage = new HomeDepotDIYWorkShopPage(test);
-        homeDepotDIYWorkShopPage.testDIYWorkshops();
+        homeDepotDIYWorkShopPage.homeDepotDIYWorkShopPageTestCase();
     }
 
     /*
