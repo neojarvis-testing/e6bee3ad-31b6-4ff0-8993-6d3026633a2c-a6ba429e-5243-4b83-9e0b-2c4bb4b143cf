@@ -66,7 +66,7 @@ public class TestHomeDepot extends Base {
     }
 
     /*
-     * a. Method Name: categoryTestCase
+     * a. Method Name: shopAllTestCase
      * b. Author Name: Jaya vardhan Raju G
      * c. Description: Home Depot Shop All TestCase
      * d. Return Type: void
@@ -92,6 +92,7 @@ public class TestHomeDepot extends Base {
         HomeDepotDIYWorkShopPage homeDepotDIYWorkShopPage = new HomeDepotDIYWorkShopPage(test);
         homeDepotDIYWorkShopPage.testDIYWorkshops();
     }
+
     /*
      * a. Method Name: CustomerServiceTestCase
      * b. Author Name: Kushal
@@ -99,12 +100,13 @@ public class TestHomeDepot extends Base {
      * d. Return Type: void
      * e. Parameters: none
      */
-    @Test(priority = 5, enabled = true)
+    @Test(priority = -3, enabled = true)
     public void CustomerServiceTestCase() {
         test = reports.createTest("Customer Services TestCase");
         HomeDepotFooterPageCustomerService homeDepotFooterPageCustomerService = new HomeDepotFooterPageCustomerService(test);
         homeDepotFooterPageCustomerService.customerServiceTestCase();
     }
+
     /*
      * a. Method Name: resourcesTestCase
      * b. Author Name: Kushal
@@ -112,36 +114,64 @@ public class TestHomeDepot extends Base {
      * d. Return Type: void
      * e. Parameters: none
      */
-    @Test(priority = 6, enabled = true)
+    @Test(priority = -2, enabled = true)
     public void resourcesTestCase() {
         test = reports.createTest("Resources TestCase");
         HomeDepotFooterResources homeDepotFooterResources = new HomeDepotFooterResources(test);
         homeDepotFooterResources.resourcesTestCase();
     }
 
+    /*
+     * a. Method Name: aboutUsFooterTestCase
+     * b. Author Name: Vansh Vijay
+     * c. Description: Home Depot About Us Footer All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 7, enabled = true)
     public void aboutUsFooterTestCase() {
         test = reports.createTest("About us Footer TestCase");
         HomeDepotAboutUsFooterPage aboutUsFooterPage = new HomeDepotAboutUsFooterPage(test);
-        aboutUsFooterPage.aboutUsFooterFlow();
+        aboutUsFooterPage.aboutUsFooterTestCase();
     }
 
+    /*
+     * a. Method Name: creditOffersTestCase
+     * b. Author Name: Vansh Vijay
+     * c. Description: Home Depot Credit Offers All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 8, enabled = true)
     public void creditOffersTestCase() {
         test = reports.createTest("Credit Offers TestCase");
         HomeDepotCreditOffersPage homeDepotCreditOffersPage = new HomeDepotCreditOffersPage(test);
-        homeDepotCreditOffersPage.creditOffersFlow();
+        homeDepotCreditOffersPage.creditOffersTestCase();
     }
 
+    /*
+     * a. Method Name: buildingMaterialsTestCase
+     * b. Author Name: Jahnavi Dasari
+     * c. Description: Home Depot Building Material All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 9, enabled = true)
-    public void buildingMaterialsTestcases() {
+    public void buildingMaterialsTestCase() {
         test = reports.createTest("Building Material Testcases");
         HomeDepotBuildingMaterials homeDepotBuildingMaterials = new HomeDepotBuildingMaterials(test);
         homeDepotBuildingMaterials.buildingMaterialsTestCase();
     }
 
+    /*
+     * a. Method Name: buildingMaterialsTestCase
+     * b. Author Name: Jahnavi Dasari
+     * c. Description: Home Depot Footer Links All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 1, enabled = true)
-    public void footerLinksTestcases() {
+    public void footerLinksTestCase() {
         test = reports.createTest("Footer Links Testcases");
         HomeDepotFooterLinksPage homeDepotFooterLinksPage = new HomeDepotFooterLinksPage(test);
         homeDepotFooterLinksPage.footerLinksTestCase();

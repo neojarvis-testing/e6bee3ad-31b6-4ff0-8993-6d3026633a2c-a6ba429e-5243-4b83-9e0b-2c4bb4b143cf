@@ -368,7 +368,7 @@ public class HomeDepotAboutUsFooterPage {
     * d. Return Type: void
     * e. Parameters: none
     */
-    public void aboutUsFooterFlow(){
+    public void aboutUsFooterTestCase(){
         clickOnCareers();
         verifyUrlCareers();
         clickOnCorporateInformation();

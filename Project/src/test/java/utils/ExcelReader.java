@@ -27,13 +27,13 @@ public class ExcelReader {
      * int r: row of the sheet
      * int c: column of the sheet
      */
-    public static String readData(String path,String name, int r, int c){
+    public static String readData(String path,String name, int rows, int cols){
         try {
             file=new FileInputStream(path);
             workbook= new XSSFWorkbook(file);
             sheet=workbook.getSheet(name);
-            row=sheet.getRow(r);
-            cell=row.getCell(c);
+            row=sheet.getRow(rows);
+            cell=row.getCell(cols);
             String value=cell.toString();
             return value;
         }catch(FileNotFoundException e){
