@@ -107,29 +107,57 @@ public class TestHomeDepot extends Base {
         homeDepotFooterResources.Resources();
     }
 
+    /*
+     * a. Method Name: aboutUsFooterTestCase
+     * b. Author Name: Vansh Vijay
+     * c. Description: Home Depot About Us Footer All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 7, enabled = true)
     public void aboutUsFooterTestCase() {
         test = reports.createTest("About us Footer TestCase");
         HomeDepotAboutUsFooterPage aboutUsFooterPage = new HomeDepotAboutUsFooterPage(test);
-        aboutUsFooterPage.aboutUsFooterFlow();
+        aboutUsFooterPage.aboutUsFooterTestCase();
     }
 
+    /*
+     * a. Method Name: creditOffersTestCase
+     * b. Author Name: Vansh Vijay
+     * c. Description: Home Depot Credit Offers All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 8, enabled = true)
     public void creditOffersTestCase() {
         test = reports.createTest("Credit Offers TestCase");
         HomeDepotCreditOffersPage homeDepotCreditOffersPage = new HomeDepotCreditOffersPage(test);
-        homeDepotCreditOffersPage.creditOffersFlow();
+        homeDepotCreditOffersPage.creditOffersTestCase();
     }
 
+    /*
+     * a. Method Name: buildingMaterialsTestCase
+     * b. Author Name: Jahnavi Dasari
+     * c. Description: Home Depot Building Material All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 9, enabled = true)
-    public void buildingMaterialsTestcases() {
+    public void buildingMaterialsTestCase() {
         test = reports.createTest("Building Material Testcases");
         HomeDepotBuildingMaterials homeDepotBuildingMaterials = new HomeDepotBuildingMaterials(test);
         homeDepotBuildingMaterials.buildingMaterialsTestCase();
     }
 
+    /*
+     * a. Method Name: buildingMaterialsTestCase
+     * b. Author Name: Jahnavi Dasari
+     * c. Description: Home Depot Footer Links All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 1, enabled = true)
-    public void footerLinksTestcases() {
+    public void footerLinksTestCase() {
         test = reports.createTest("Footer Links Testcases");
         HomeDepotFooterLinksPage homeDepotFooterLinksPage = new HomeDepotFooterLinksPage(test);
         homeDepotFooterLinksPage.footerLinksTestCase();

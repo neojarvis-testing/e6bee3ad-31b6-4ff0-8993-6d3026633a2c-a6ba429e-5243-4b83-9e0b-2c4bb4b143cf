@@ -356,7 +356,7 @@ public class HomeDepotCreditOffersPage {
     * d. Return Type: void
     * e. Parameters: none
     */
-    public void creditOffersFlow(){
+    public void creditOffersTestCase(){
         clickOnCreditOffers();
         verifyTextForCreditOffers();
         clickOnApplyNow();
