@@ -6,7 +6,6 @@ public class HomeDepotDIYWorkShopPageLocator {
     /*
      * Author Name: Sri Ramya Paladi
      */
-
     //DIY menu button in the header.
     public static By diyIcon = By.xpath("//p[text()='DIY']");
     //Free Workshops section

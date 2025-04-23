@@ -26,91 +26,134 @@ public class TestHomeDepot extends Base {
     ExtentReports reports;
     ExtentTest test;
 
+
+    /*
+     * a. Method Name: openReport
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: To generate the report
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @BeforeClass
     public void openReport() {
         reports = Reporter.generateExtentReports("HOMEDEPOT_Report");
     }
-
+    
+    /*
+     * a. Method Name: open
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: To open the browser
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @BeforeMethod
     public void open() {
         openBrowser();
     }
 
+    /*
+     * a. Method Name: categoryTestCase
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Home Depot Category TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 10, enabled = true)
-    public void categoryTestcases() {
-        test = reports.createTest("Category Section Testcases");
-        HomeDepotCategory page = new HomeDepotCategory(test);
-        page.homeDepotCategoryTestcases();
+    public void categoryTestCase() {
+        test = reports.createTest("Category Section TestCase");
+        HomeDepotCategory homeDepotCategory = new HomeDepotCategory(test);
+        homeDepotCategory.homeDepotCategoryTestCase();
     }
 
+    /*
+     * a. Method Name: categoryTestCase
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Home Depot Shop All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 2, enabled = true)
-    public void shopAllTestcases() {
-        test = reports.createTest("Shop All Testcases");
-        HomeDepotShopAll page = new HomeDepotShopAll(test);
-        page.homeDepotShopAllTestcases();
+    public void shopAllTestCase() {
+        test = reports.createTest("Shop All TestCase");
+        HomeDepotShopAll homeDepotShopAll = new HomeDepotShopAll(test);
+        homeDepotShopAll.homeDepotShopAllTestCase();
     }
 
     @Test(priority = 3, enabled = true)
-    public void servicesPageTestcases() {
-        test = reports.createTest("Services Testcases");
+    public void servicesPageTestCase() {
+        test = reports.createTest("Services TestCase");
         HomeDepotServicesPage homeDepotServicesPage = new HomeDepotServicesPage(test);
         homeDepotServicesPage.testServicesFlow();
     }
 
     @Test(priority = 4, enabled = true)
-    public void workshopTestcases() {
-        test = reports.createTest("Workshop Testcases");
+    public void workshopTestCase() {
+        test = reports.createTest("Workshop TestCase");
         HomeDepotDIYWorkShopPage homeDepotDIYWorkShopPage = new HomeDepotDIYWorkShopPage(test);
         homeDepotDIYWorkShopPage.testDIYWorkshops();
     }
 
     @Test(priority = 5, enabled = true)
-    public void CustomerServiceTestcases() {
-        test = reports.createTest("Customer services Testcases");
+    public void CustomerServiceTestCase() {
+        test = reports.createTest("Customer Services TestCase");
         HomeDepotFooterPageCustomerService hdfc = new HomeDepotFooterPageCustomerService(test);
         hdfc.CustomerService();
     }
 
     @Test(priority = 6, enabled = true)
-    public void resourcesTestcases() {
-        test = reports.createTest("Resources Testcases");
+    public void resourcesTestCase() {
+        test = reports.createTest("Resources TestCase");
         HomeDepotFooterResources homeDepotFooterResources = new HomeDepotFooterResources(test);
         homeDepotFooterResources.Resources();
     }
 
     @Test(priority = 7, enabled = true)
-    public void aboutUsFooterTestcases() {
-        test = reports.createTest("About us Footer Testcases");
+    public void aboutUsFooterTestCase() {
+        test = reports.createTest("About us Footer TestCase");
         HomeDepotAboutUsFooterPage aboutUsFooterPage = new HomeDepotAboutUsFooterPage(test);
         aboutUsFooterPage.aboutUsFooterFlow();
     }
 
     @Test(priority = 8, enabled = true)
-    public void creditOffersTestcases() {
-        test = reports.createTest("Credit Offers Testcases");
+    public void creditOffersTestCase() {
+        test = reports.createTest("Credit Offers TestCase");
         HomeDepotCreditOffersPage homeDepotCreditOffersPage = new HomeDepotCreditOffersPage(test);
         homeDepotCreditOffersPage.creditOffersFlow();
     }
 
     @Test(priority = 9, enabled = true)
-    public void buildingMaterialsTestcases() {
-        test = reports.createTest("Building Material Testcases");
+    public void buildingMaterialsTestCase() {
+        test = reports.createTest("Building Material TestCase");
         HomeDepotBuildingMaterials hd = new HomeDepotBuildingMaterials(test);
         hd.buildingMaterials();
     }
 
     @Test(priority = 1, enabled = true)
-    public void footerLinksTestcases() {
-        test = reports.createTest("Footer Links Testcases");
+    public void footerLinksTestCase() {
+        test = reports.createTest("Footer Links TestCase");
         HomeDepotFooterLinksPage hd = new HomeDepotFooterLinksPage(test);
         hd.footerLinks();
     }
 
+    /*
+     * a. Method Name: close
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: To close the browser
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @AfterMethod
     public void close() {
         driver.quit();
     }
 
+    /*
+     * a. Method Name: closeReport
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Finalizes and flushes the report data to the report file
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @AfterClass
     public void closeReport() {
         reports.flush();

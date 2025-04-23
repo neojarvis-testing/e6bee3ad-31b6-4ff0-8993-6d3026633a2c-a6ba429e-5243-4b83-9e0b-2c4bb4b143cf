@@ -19,62 +19,62 @@ public class LoggerHandler {
         }
     }
     /*
- * a. Method Name: trace
- * b. Author Name: Vansh Vijay
- * c. Description: This method logs trace-level messages using the logger.
- * d. Return Type: void
- * e. Parameters: String message;
- */
+    * a. Method Name: trace
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method logs trace-level messages using the logger.
+    * d. Return Type: void
+    * e. Parameters: String message;
+    */
     public static void trace (String message) {
         logger.trace(message);
     }
-/*
- * a. Method Name: debug
- * b. Author Name: Vansh Vijay
- * c. Description: This method logs debug-level messages using the logger.
- * d. Return Type: void
- * e. Parameters: String message;
- */
+    /*
+    * a. Method Name: debug
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method logs debug-level messages using the logger.
+    * d. Return Type: void
+    * e. Parameters: String message;
+    */
     public static void debug (String message) {
         logger.debug(message);
     }
-/*
- * a. Method Name: info
- * b. Author Name: Vansh Vijay
- * c. Description: This method logs info-level messages using the logger.
- * d. Return Type: void
- * e. Parameters: String message;
- */
+    /*
+    * a. Method Name: info
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method logs info-level messages using the logger.
+    * d. Return Type: void
+    * e. Parameters: String message;
+    */
     public static void info (String message) {
         logger.info(message);
     }
-/*
- * a. Method Name: warn
- * b. Author Name: Vansh Vijay
- * c. Description: This method logs warn-level messages using the logger.
- * d. Return Type: void
- * e. Parameters: String message;
- */
+    /*
+    * a. Method Name: warn
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method logs warn-level messages using the logger.
+    * d. Return Type: void
+    * e. Parameters: String message;
+    */
     public static void warn (String message) {
         logger.warn(message);
     }
-/*
- * a. Method Name: error
- * b. Author Name: Vansh Vijay
- * c. Description: This method logs error-level messages using the logger.
- * d. Return Type: void
- * e. Parameters: String message;
- */
+    /*
+    * a. Method Name: error
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method logs error-level messages using the logger.
+    * d. Return Type: void
+    * e. Parameters: String message;
+    */
     public static void error (String message) {
         logger.error(message);
     }
-/*
- * a. Method Name: fatal
- * b. Author Name: Vansh Vijay
- * c. Description: This method logs fatal-level messages using the logger.
- * d. Return Type: void
- * e. Parameters: String message;
- */
+    /*
+    * a. Method Name: fatal
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method logs fatal-level messages using the logger.
+    * d. Return Type: void
+    * e. Parameters: String message;
+    */
     public static void fatal (String message) {
         logger.fatal(message);
     }
