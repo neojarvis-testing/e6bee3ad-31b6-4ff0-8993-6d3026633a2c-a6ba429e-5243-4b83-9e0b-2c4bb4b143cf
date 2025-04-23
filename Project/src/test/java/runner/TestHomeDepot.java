@@ -93,14 +93,14 @@ public class TestHomeDepot extends Base {
         homeDepotDIYWorkShopPage.testCase4();
     }
 
-    @Test(priority = 5, enabled = true)
+    @Test(priority = -3, enabled = true)
     public void CustomerServiceTestCase() {
         test = reports.createTest("Customer Services TestCase");
         HomeDepotFooterPageCustomerService hdfc = new HomeDepotFooterPageCustomerService(test);
         hdfc.CustomerService();
     }
 
-    @Test(priority = 6, enabled = true)
+    @Test(priority = -2, enabled = true)
     public void resourcesTestCase() {
         test = reports.createTest("Resources TestCase");
         HomeDepotFooterResources homeDepotFooterResources = new HomeDepotFooterResources(test);
@@ -121,7 +121,7 @@ public class TestHomeDepot extends Base {
         homeDepotCreditOffersPage.creditOffersFlow();
     }
 
-    @Test(priority = 9, enabled = true)
+    @Test(priority = -1, enabled = true)
     public void buildingMaterialsTestCase() {
         test = reports.createTest("Building Material TestCase");
         HomeDepotBuildingMaterials hd = new HomeDepotBuildingMaterials(test);
