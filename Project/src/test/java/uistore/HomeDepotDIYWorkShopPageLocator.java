@@ -20,7 +20,7 @@ public class HomeDepotDIYWorkShopPageLocator {
     public static By clickHearAboutUs = By.cssSelector("button[id='sui-QznEI6mQgAbMHzJdCNR2E']");
     public static By clickFriend =  By.cssSelector("li[id='sui-SA0xNlIhEHfQz7db_qEdV-Friend / Family Member']");
     public static By register = By.cssSelector("button[type='submit']");
-    public static By clickClose = By.xpath("/html/body/div[10]/div[3]/div/div[1]/div/div[2]/button");
+    public static By clickClose = By.xpath("//div[10]/div[3]/div/div[1]/div/div[2]/button");
     public static By clickOnDemand = By.xpath("//img[@alt='On-Demand Workshops']");
     public static By clickResources = By.cssSelector("a[href='/wcc/eh/3092587/category/51559/resources']");
     public static By verifyResources = By.cssSelector("h1[class='category-name break-word']");

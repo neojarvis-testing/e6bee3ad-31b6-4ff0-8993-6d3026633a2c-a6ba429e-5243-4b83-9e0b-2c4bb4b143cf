@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 
 import uistore.HomeDepotCategoryLocators;
 import utils.Base;
+import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.Reporter;
 import utils.Screenshot;
@@ -16,11 +17,27 @@ public class HomeDepotCategory {
     WebDriverHelper helper;
     ExtentTest test;
 
+    /*
+     * a. Method Name: HomeDepotShopAll
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Constructor for the HomeDepotCategory
+     *                 initialize the WebDriverHelper and assign ExtentTest
+     * d. Return Type: void
+     * e. Parameters: 
+     *      - ExtentTest test - For logging test steps
+     */
     public HomeDepotCategory(ExtentTest test) {
         helper = new WebDriverHelper(Base.driver);
         this.test = test;
     }
 
+    /*
+     * a. Method Name: clickOnSearchInputBar
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Clicks on search input bar on the top of the homepage
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void clickOnSearchInputBar() {
         try {
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.searchInputBar, 30);
@@ -33,9 +50,18 @@ public class HomeDepotCategory {
         }
     }
 
+    /*
+     * a. Method Name: enterValueOnInputBar
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Enters value on search input bar
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void enterValueOnInputBar() {
         try {
-            helper.sendData(HomeDepotCategoryLocators.searchInputBar, "wrench");
+            String searchValue = ExcelReader.readData(System.getProperty("user.dir") + "/testdata/jay_test_data.xlsx", "Sheet1", 0, 0);
+            helper.sendData(HomeDepotCategoryLocators.searchInputBar, searchValue);
+            // helper.sendData(HomeDepotCategoryLocators.searchInputBar, "wrench");
             test.log(Status.PASS,  "Entered wrench on Input Search Bar");
             LoggerHandler.info("Entered wrench on Input Search Bar");
         } catch (Exception e) {
@@ -43,7 +69,14 @@ public class HomeDepotCategory {
             LoggerHandler.error("Failed to enter value on Input Search Bar");
         }
     }
-
+    
+    /*
+    * a. Method Name: clickOnSearchIcon
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Clicks on search icon on the input bar
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void clickOnSearchIcon() {
         try {
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.searchIcon, 30);
@@ -56,11 +89,19 @@ public class HomeDepotCategory {
         }
     }
     
+    /*
+    * a. Method Name: verifyWrenchLabel
+    * b. Author Name: Jaya vardhan Raju G
+    * c. Description: Verifies wrench label with Assertion
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyWrenchLabel() {
         try {
+            String expectedValue = ExcelReader.readData(System.getProperty("user.dir") + "/testdata/jay_test_data.xlsx", "Sheet1", 0, 0);
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.wrenchLabel, 30);
-            String label = helper.getText(HomeDepotCategoryLocators.wrenchLabel);
-            Assert.assertEquals(label, "wrench");
+            String actualValue = helper.getText(HomeDepotCategoryLocators.wrenchLabel);
+            Assert.assertEquals(actualValue, expectedValue);
             test.log(Status.PASS, "Verified wrench label");
             LoggerHandler.info("Verified wrench label");
         } catch (Exception e) {
@@ -69,6 +110,13 @@ public class HomeDepotCategory {
         }
     }
     
+    /*
+     * a. Method Name: clickOnCategory
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Clicks on catergory dropdown filter
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void clickOnCategory() {
         try {
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.category, 30);
@@ -81,6 +129,13 @@ public class HomeDepotCategory {
         }
     }
     
+    /*
+     * a. Method Name: clickOnWrenchSets
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Clicks on Wrench Sets from category dropdown filter
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void clickOnWrenchSets() {
         try {
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.wrenchSets, 30);
@@ -93,11 +148,19 @@ public class HomeDepotCategory {
         }
     }
     
+    /*
+     * a. Method Name: verifyWrenchSetsLabel
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Verifies Wrench Sets label with Assertion
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void verifyWrenchSetsLabel() {
         try {
+            String expectedValue = ExcelReader.readData(System.getProperty("user.dir") + "/testdata/jay_test_data.xlsx", "Sheet1", 1, 0);
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.wrenchSetsLabel, 30);
-            String label = helper.getText(HomeDepotCategoryLocators.wrenchSetsLabel);
-            Assert.assertEquals(label, "Wrench Sets");
+            String actualValue = helper.getText(HomeDepotCategoryLocators.wrenchSetsLabel);
+            Assert.assertEquals(actualValue, expectedValue);
             test.log(Status.PASS, "Verified Wrench Sets label");
             LoggerHandler.info("Verified Wrench Sets label");
         } catch (Exception e) {
@@ -106,6 +169,13 @@ public class HomeDepotCategory {
         } 
     }
     
+    /*
+     * a. Method Name: navigateToPreviousPage
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Navigate backs to the previous page 
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void navigateToPreviousPage() {
         try {
             helper.navigateBack();     
@@ -117,6 +187,13 @@ public class HomeDepotCategory {
         }
     }
 
+    /*
+     * a. Method Name: clickOnRatchetingWrenches
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Clicks on Ratcheting Wrenches from category dropdown filter
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void clickOnRatchetingWrenches() {
         try {
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.ratchetingWrenches, 30);
@@ -129,11 +206,19 @@ public class HomeDepotCategory {
         }
     }
     
+    /*
+     * a. Method Name: verifyRatchetingWrenchesLabel
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Verifies Ratcheting Wrenches label with Assertion
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void verifyRatchetingWrenchesLabel() {
         try {
+            String expectedValue = ExcelReader.readData(System.getProperty("user.dir") + "/testdata/jay_test_data.xlsx", "Sheet1", 2, 0);
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.ratchetingWrenchesLabel, 30);
-            String label = helper.getText(HomeDepotCategoryLocators.ratchetingWrenchesLabel);
-            Assert.assertEquals(label, "Ratcheting Wrenches");
+            String actualValue = helper.getText(HomeDepotCategoryLocators.ratchetingWrenchesLabel);
+            Assert.assertEquals(actualValue, expectedValue);
             test.log(Status.PASS, "Verified Ratcheting Wrenches label");
             LoggerHandler.info("Verified Ratcheting Wrenches label");
         } catch (Exception e) {
@@ -142,6 +227,13 @@ public class HomeDepotCategory {
         } 
     }
 
+    /*
+     * a. Method Name: clickOnAdjustableWrenches
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Clicks on Adjustable Wrenches from category dropdown filter
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void clickOnAdjustableWrenches() {
         try {
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.adjustableWrenches, 30);
@@ -154,11 +246,19 @@ public class HomeDepotCategory {
         }
     }
     
+    /*
+     * a. Method Name: verifyAdjustableWrenchesLabel
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Verifies Adjustable Wrences label with Assertion
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void verifyAdjustableWrenchesLabel() {
         try {
+            String expectedValue = ExcelReader.readData(System.getProperty("user.dir") + "/testdata/jay_test_data.xlsx", "Sheet1", 3, 0);
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.adjustableWrenchesLabel, 30);
-            String label = helper.getText(HomeDepotCategoryLocators.adjustableWrenchesLabel);
-            Assert.assertEquals(label, "Adjustable Wrenches");
+            String actualValue = helper.getText(HomeDepotCategoryLocators.adjustableWrenchesLabel);
+            Assert.assertEquals(actualValue, expectedValue);
             test.log(Status.PASS, "Verified Adjustable Wrenches label");
             LoggerHandler.info("Verified Adjustable Wrenches label");
         } catch (Exception e) {
@@ -167,6 +267,13 @@ public class HomeDepotCategory {
         } 
     }
 
+    /*
+     * a. Method Name: clickOnAdjustableWrenches
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Clicks on Impact Wrenches from category dropdown filter
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void clickOnImpactWrenches() {
         try {
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.impactWrenches, 30);
@@ -179,11 +286,19 @@ public class HomeDepotCategory {
         }
     }
     
+    /*
+     * a. Method Name: verifyImpactWrenchesLabel
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Verifies Impact Wrenches label with Assertion
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void verifyImpactWrenchesLabel() {
         try {
+            String expectedValue = ExcelReader.readData(System.getProperty("user.dir") + "/testdata/jay_test_data.xlsx", "Sheet1", 4, 0);
             helper.waitForElementToBeVisible(HomeDepotCategoryLocators.impactWrenchesLabel, 30);
-            String label = helper.getText(HomeDepotCategoryLocators.impactWrenchesLabel);
-            Assert.assertEquals(label, "Impact Wrenches");
+            String actualValue = helper.getText(HomeDepotCategoryLocators.impactWrenchesLabel);
+            Assert.assertEquals(actualValue, expectedValue);
             test.log(Status.PASS, "Verified Impact Wrenches label");
             LoggerHandler.info("Verified Impact Wrenches label");
         } catch (Exception e) {
@@ -192,13 +307,27 @@ public class HomeDepotCategory {
         } 
     }
     
+    /*
+     * a. Method Name: takeScreenshot
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Takes screenshot of the current page and attaches to report
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     public void takeScreenshot() {
         Screenshot.captureScreenShot("Impact Wrenches");
         Reporter.attachScreenshotToReport("Impact Wrenches", test, "Details of Wrenches");
         LoggerHandler.info("Took screenshot of Impact Wrenches page");
     }
 
-    public void homeDepotCategoryTestcases() {
+    /*
+     * a. Method Name: homeDepotCategoryTestcase
+     * b. Author Name: Jaya vardhan Raju G
+     * c. Description: Calls all the methods of the current page
+     * d. Return Type: void
+     * e. Parameters: none
+     */
+    public void homeDepotCategoryTestCase() {
         clickOnSearchInputBar();
         enterValueOnInputBar();
         clickOnSearchIcon();
