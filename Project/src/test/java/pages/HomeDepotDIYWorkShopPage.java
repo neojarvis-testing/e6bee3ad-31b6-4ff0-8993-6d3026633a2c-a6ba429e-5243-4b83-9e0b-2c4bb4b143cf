@@ -24,7 +24,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the DIY menu icon in the header.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void clickOnDIYIcon(){
         try {
@@ -46,7 +46,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Free Workshops section.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void clickOnFreeWorkShops(){
         try {
@@ -68,7 +68,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the Free Workshops text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void verifyFreeWorkShopsText(){
         try {
@@ -89,7 +89,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Kids Workshops section.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void clickOnKidsWorkShops(){
         try {
@@ -111,7 +111,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the Kids Workshops text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void verifyKidsWorkShopsText(){
         try {
@@ -132,7 +132,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Learn More link.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void clickOnLearnMore(){
         try {
@@ -154,7 +154,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the page title to ensure correct navigation.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void verifyThePageTitle(){
         try {
@@ -174,7 +174,7 @@ public class HomeDepotDIYWorkShopPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Register Now button.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: n
      */
     public void clickOnRegisterNow(){
         try {
@@ -196,7 +196,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Verifies the presence of the Parent / Guardian First Name text from test data.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void verifyParentNameText(){
         try {
@@ -217,7 +217,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the Parent / Guardian First Name input field and verifies it.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void clickOnFirstName(){
         try {
@@ -239,7 +239,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Enters the Parent / Guardian First Name retrieved from test data.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void enterFirstName(){
         try {
@@ -259,7 +259,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the Email input field and verifies the expected value.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void clickEmailArea(){
         try {
@@ -281,7 +281,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Enters the email address retrieved from test data.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void enterEmail(){
         try {
@@ -300,7 +300,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the Hear About Us dropdown and verifies the expected value.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void clickOnHearAboutUs(){
         try {
@@ -322,7 +322,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the Friend / Family Member option from the dropdown.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void clickOnFriendsAndFamily(){
         try {
@@ -344,7 +344,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the Register button and verifies the expected value.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void clickOnRegisterSubmitButton(){
         try {
@@ -366,7 +366,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the On-Demand Workshops section and verifies the expected value.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void clickOnTheDemands(){
         try {
@@ -388,7 +388,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the Resources section and verifies the expected value.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: n
     */
     public void clickOnResources(){
         try {
@@ -411,7 +411,7 @@ public class HomeDepotDIYWorkShopPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Verifies the presence of the Resources text retrieved from test data.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: none
     */
     public void verifyTheResources(){
         try {
@@ -427,7 +427,7 @@ public class HomeDepotDIYWorkShopPage {
         }
     }
 
-    public void testDIYWorkshops(){
+    public void homeDepotDIYWorkShopPageTestCase(){
         clickOnDIYIcon();
         clickOnFreeWorkShops();
         verifyFreeWorkShopsText();

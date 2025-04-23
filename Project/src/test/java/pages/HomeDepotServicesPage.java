@@ -26,7 +26,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Services menu icon in the header.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void clickOnServicesIcon(){
         try {
@@ -48,7 +48,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the Services text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void verifyServicesText(){
         try {
@@ -68,7 +68,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Installation & Services option.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void clickOnInstallation(){
         try {
@@ -90,7 +90,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the View All Installation & Services link.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void clickOnViewAllInstallation(){
         try {
@@ -112,7 +112,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the Home Services text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void verifyHomeServicesText(){
         try {
@@ -132,7 +132,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Flooring Installation section.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void clickOnFlooring(){
         try {
@@ -154,7 +154,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the Flooring Installation text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void verifyFlooringText(){
         try {
@@ -174,7 +174,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Bathroom Installation section.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void clickOnBathroom(){
         try {
@@ -196,7 +196,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the Bathroom Installation Services text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void verifyBathroomText(){
         try {
@@ -217,7 +217,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Clicks on the Windows & Doors Installation section.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void clickOnDoorsAndWindows(){
         try {
@@ -239,7 +239,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the Window & Door Services text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void verifyWindowServicesText(){
         try {
@@ -260,7 +260,7 @@ public class HomeDepotServicesPage {
     * b. Author Name: Sri Ramya Paladi
     * c. Description: Clicks on the HVAC Services section.
     * d. Return Type: void
-    * e. Parameters: None
+    * e. Parameters: none
     */
     public void clickOnHeating(){
         try {
@@ -282,7 +282,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Verifies the presence of the HVAC Services text.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void verifyHeatingText(){
         try {
@@ -303,7 +303,7 @@ public class HomeDepotServicesPage {
      * b. Author Name: Sri Ramya Paladi
      * c. Description: Navigates back to the previous page.
      * d. Return Type: void
-     * e. Parameters: None
+     * e. Parameters: none
      */
     public void navigateBackToPreviousPage(){
         try{
@@ -317,7 +317,7 @@ public class HomeDepotServicesPage {
         }
     }
 
-    public void testServicesFlow(){
+    public void homeDepotServicesPageTestCase(){
         try {
             clickOnServicesIcon();
             verifyServicesText();
