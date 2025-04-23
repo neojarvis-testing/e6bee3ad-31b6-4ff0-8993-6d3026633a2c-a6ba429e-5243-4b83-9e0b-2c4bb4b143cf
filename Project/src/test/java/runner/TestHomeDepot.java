@@ -95,15 +95,15 @@ public class TestHomeDepot extends Base {
     @Test(priority = 9, enabled = true)
     public void buildingMaterialsTestcases() {
         test = reports.createTest("Building Material Testcases");
-        HomeDepotBuildingMaterials hd = new HomeDepotBuildingMaterials(test);
-        hd.buildingMaterials();
+        HomeDepotBuildingMaterials homeDepotBuildingMaterials = new HomeDepotBuildingMaterials(test);
+        homeDepotBuildingMaterials.buildingMaterialsTestCase();
     }
 
     @Test(priority = 1, enabled = true)
     public void footerLinksTestcases() {
         test = reports.createTest("Footer Links Testcases");
-        HomeDepotFooterLinksPage hd = new HomeDepotFooterLinksPage(test);
-        hd.footerLinks();
+        HomeDepotFooterLinksPage homeDepotFooterLinksPage = new HomeDepotFooterLinksPage(test);
+        homeDepotFooterLinksPage.footerLinksTestCase();
     }
 
     @AfterMethod
