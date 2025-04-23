@@ -8,22 +8,31 @@ import com.aventstack.extentreports.Status;
 
 import uistore.HomeDepotFooterLocator;
 import utils.Base;
+import utils.ExcelReader;
 import utils.LoggerHandler;
+import utils.Reporter;
+import utils.Screenshot;
 import utils.WebDriverHelper;
 
 public class HomeDepotFooterPageCustomerService {
-    public static WebDriverHelper helper;
-    public static ExtentTest test;
+    WebDriverHelper helper;
+    ExtentTest test;
 
     public HomeDepotFooterPageCustomerService(ExtentTest test){
         helper = new WebDriverHelper(Base.driver);
         this.test = test;
     }
+    /* a. Method Name: clickOnCheckOrderStatus
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Check Order Status in the footer section
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnCheckOrderStatus(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.CheckOrderStatus, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.CheckOrderStatus);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.checkOrderStatus, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.checkOrderStatus);
             LoggerHandler.info("Clicked on check order status");
             test.log(Status.INFO, "Clicked on check order status");
         } catch (Exception e) {
@@ -31,10 +40,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not clicked on check order status");
         }
     }
-    public void VerifyOrderStatus(){
+    /* a. Method Name: verifyOrderStatus
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Check Order Status.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyOrderStatus(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("/myaccount/guest-order-tracking"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 0, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /myaccount/guest-order-tracking");
             test.log(Status.INFO, "URL contains /myaccount/guest-order-tracking");
         } catch (Exception e) {
@@ -42,11 +58,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /myaccount/guest-order-tracking");
         }
     }
+    /* a. Method Name: clickOnPayYourCreditCard
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Pay Your Credit Card in the footer section
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnPayYourCreditCard(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.PayYourCreditCard, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.PayYourCreditCard);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.payYourCreditCard, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.payYourCreditCard);
             LoggerHandler.info("Clicked on Pay your credit card");
             test.log(Status.INFO, "Clicked on Pay your credit card");
         } catch (Exception e) {
@@ -54,10 +76,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not Clicked on Pay your credit card");
         }
     }
-    public void VerifyCreditCenter(){
+    /* a. Method Name: verifyCreditCenter
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Pay Your Credit Card.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyCreditCenter(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("/c/credit-center"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 1, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/credit-center");
             test.log(Status.INFO, "URL contains /c/credit-center");
         } catch (Exception e) {
@@ -65,11 +94,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /c/credit-center");
         }
     }
+    /* a. Method Name: clickOnOrderCancellation
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Order Cancellation in the footer section.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnOrderCancellation(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.OrderCancellation, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.OrderCancellation);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.orderCancellation, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.orderCancellation);
             LoggerHandler.info("Clicked on Order Cancellation");
             test.log(Status.INFO, "Clicked on Order Cancellation");
         } catch (Exception e) {
@@ -77,10 +112,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not Clicked on Order Cancellation");
         }
     }
-    public void VerifyCustomerCenter(){
+    /* a. Method Name: verifyCustomerCenter
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Order Cancellation.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyCustomerCenter(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("/c/Customer_Support_Answers#cancel"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 2, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/Customer_Support_Answers#cancel");
             test.log(Status.INFO, "URL contains /c/Customer_Support_Answers#cancel");
         } catch (Exception e) {
@@ -88,11 +130,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /c/Customer_Support_Answers#cancel");
         }
     }
+    /* a. Method Name: clickOnReturnPolicy
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Return Policy in the footer section.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnReturnPolicy(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.ReturnPolicy, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.ReturnPolicy);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.returnPolicy, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.returnPolicy);
             LoggerHandler.info("Clicked on Return Policy");
             test.log(Status.INFO, "Clicked on Return Policy");
         } catch (Exception e) {
@@ -100,10 +148,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not Clicked on Return Policy");
         }
     }
-    public void VerifyReturnPolicy(){
+    /* a. Method Name: verifyReturnPolicy.
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Return Policy.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyReturnPolicy(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("/c/Return_Policy"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 3, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/Return_Policy");
             test.log(Status.INFO, "URL contains /c/Return_Policy");
         } catch (Exception e) {
@@ -111,11 +166,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /c/Return_Policy");
         }
     }
+    /* a. Method Name: clickOnRefundPolicy. 
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Refund Policy in the footer section.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnRefundPolicy(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.RefundPolicy, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.RefundPolicy);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.refundPolicy, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.refundPolicy);
             LoggerHandler.info("Clicked on Refund Policy");
             test.log(Status.INFO, "Clicked on Refund Policy");
         } catch (Exception e) {
@@ -123,10 +184,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not Clicked on Refund Policy");
         }
     }
-    public void VerifyRefundPolicy(){
+    /* a. Method Name: verifyRefundPolicy.
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Refund Policy.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyRefundPolicy(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("/c/refund-policy"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 4, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/refund-policy");
             test.log(Status.INFO, "URL contains /c/refund-policy");
         } catch (Exception e) {
@@ -134,11 +202,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /c/refund-policy");
         }
     }
+    /* a. Method Name: clickOnShippingandDelivery. 
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Shipping & Delivery in the footer section.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnShippingandDelivery(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.ShippingDelivery, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.ShippingDelivery);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.shippingDelivery, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.shippingDelivery);
             LoggerHandler.info("Clicked on Shipping & Delivery");
             test.log(Status.INFO, "Clicked on Shipping & Delivery");
         } catch (Exception e) {
@@ -146,10 +220,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not clicked on Shipping & Delivery");
         }
     }
-    public void VerifyOnlineOrder(){
+    /* a. Method Name: verifyOnlineOrder.
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Shipping & Delivery.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyOnlineOrder(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("/c/About_Your_Online_Order"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 5, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/About_Your_Online_Order");
             test.log(Status.INFO, "URL contains /c/About_Your_Online_Order");
         } catch (Exception e) {
@@ -157,11 +238,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /c/About_Your_Online_Order");
         }
     }
+    /* a. Method Name: clickOnProductRecalls. 
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Product Recalls in the footer section.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnProductRecalls(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.ProductRecalls, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.ProductRecalls);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.productRecalls, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.productRecalls);
             LoggerHandler.info("Clicked on Product Recalls");
             test.log(Status.INFO, "Clicked on Product Recalls");
         } catch (Exception e) {
@@ -169,10 +256,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not clicked on Product Recalls");
         }
     }
-    public void VerifyProductRecalls(){
+    /* a. Method Name: verifyProductRecalls.
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Product Recalls.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyProductRecalls(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("/c/Product_Recalls"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 6, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/Product_Recalls");
             test.log(Status.INFO, "URL contains /c/Product_Recalls");
         } catch (Exception e) {
@@ -180,11 +274,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains /c/Product_Recalls");
         }
     }
+    /* a. Method Name: clickOnMyPreferenceCenter. 
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Preference Center in the footer section.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnMyPreferenceCenter(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.MyPreferenceCenter, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.MyPreferenceCenter);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.myPreferenceCenter, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.myPreferenceCenter);
             LoggerHandler.info("Clicked on My Preference center");
             test.log(Status.INFO, "Clicked on My Preference center");
         } catch (Exception e) {
@@ -192,10 +292,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not clicked on My Preference center");
         }
     }
-    public void VerifyMyPreferenceCenter(){
+    /* a. Method Name: verifyMyPreferenceCenter.
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the My Preference Center.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyMyPreferenceCenter(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("privacy/MyPreferenceCenter"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 7, 1);
+            Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains privacy/MyPreferenceCenter");
             test.log(Status.INFO, "URL contains privacy/MyPreferenceCenter");
         } catch (Exception e) {
@@ -203,11 +310,17 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "URL doesn't contains privacy/MyPreferenceCenter");
         }
     }
+    /* a. Method Name: clickOnPrivacyAndSecurityCenter. 
+     * b. Author Name: Kushal
+     * c. Description: Clicks on Preference Center in the footer section.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
     public void clickOnPrivacyAndSecurityCenter(){
         try {
             helper.scrollToEnd();
-            helper.waitForElementToBeVisible(HomeDepotFooterLocator.PrivacySecurityCentre, 10);
-            helper.clickOnElement(HomeDepotFooterLocator.PrivacySecurityCentre);
+            helper.waitForElementToBeVisible(HomeDepotFooterLocator.privacySecurityCentre, 10);
+            helper.clickOnElement(HomeDepotFooterLocator.privacySecurityCentre);
             LoggerHandler.info("Clicked on Privacy Security Center");
             test.log(Status.INFO, "Clicked on Privacy Security Center");
         } catch (Exception e) {
@@ -215,10 +328,19 @@ public class HomeDepotFooterPageCustomerService {
             test.log(Status.FAIL, "Not clicked on Privacy Security Center");
         }
     }
-    public void VerifyPrivacyOverview(){
+    /* a. Method Name: verifyPrivacyOverview.
+     * b. Author Name: Kushal
+     * c. Description: Verifies the URL after clicking on the Privacy And Security Center.
+     * d. Return Type: void
+     * e. Parameters:None
+     */
+    public void verifyPrivacyOverview(){
         try {
             String text = helper.getUrl();
-            Assert.assertTrue(text.contains("privacy/overview"));
+            String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 8, 1);
+            Assert.assertTrue(text.contains(expected));
+            Screenshot.captureScreenShot("Customer Services");
+            Reporter.attachScreenshotToReport("Customer Services", test, "Attach");
             LoggerHandler.info("URL contains privacy/overview");
             test.log(Status.INFO, "URL contains privacy/overview");
         } catch (Exception e) {
@@ -228,22 +350,22 @@ public class HomeDepotFooterPageCustomerService {
     }
     public void CustomerService(){
         clickOnCheckOrderStatus();
-        VerifyOrderStatus();
+        verifyOrderStatus();
         clickOnPayYourCreditCard();
-        VerifyCreditCenter();
+        verifyCreditCenter();
         clickOnOrderCancellation();
-        VerifyCustomerCenter();
+        verifyCustomerCenter();
         clickOnReturnPolicy();
-        VerifyReturnPolicy();
+        verifyReturnPolicy();
         clickOnRefundPolicy();
-        VerifyRefundPolicy();
+        verifyRefundPolicy();
         clickOnShippingandDelivery();
-        VerifyOnlineOrder();
+        verifyOnlineOrder();
         clickOnProductRecalls();
-        VerifyProductRecalls();
+        verifyProductRecalls();
         clickOnMyPreferenceCenter();
-        VerifyMyPreferenceCenter();
+        verifyMyPreferenceCenter();
         clickOnPrivacyAndSecurityCenter();
-        VerifyPrivacyOverview();
+        verifyPrivacyOverview();
     }
 }
