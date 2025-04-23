@@ -79,32 +79,60 @@ public class TestHomeDepot extends Base {
         homeDepotShopAll.homeDepotShopAllTestCase();
     }
 
+    /*
+     * a. Method Name: servicesPageTestCase
+     * b. Author Name: Sri Ramya Paladi
+     * c. Description: Test case for Home Depot Services Page functionality.
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 3, enabled = true)
     public void servicesPageTestCase() {
         test = reports.createTest("Services TestCase");
         HomeDepotServicesPage homeDepotServicesPage = new HomeDepotServicesPage(test);
-        homeDepotServicesPage.testServicesFlow();
+        homeDepotServicesPage.homeDepotServicesPageTestCase();
     }
 
+    /*
+     * a. Method Name: workshopTestCase
+     * b. Author Name: Sri Ramya Paladi
+     * c. Description: Test case for Home Depot DIY Workshop Page functionality.
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = 4, enabled = true)
     public void workshopTestCase() {
         test = reports.createTest("Workshop TestCase");
         HomeDepotDIYWorkShopPage homeDepotDIYWorkShopPage = new HomeDepotDIYWorkShopPage(test);
-        homeDepotDIYWorkShopPage.testDIYWorkshops();
+        homeDepotDIYWorkShopPage.homeDepotDIYWorkShopPageTestCase();
     }
 
+    /*
+     * a. Method Name: CustomerServiceTestCase
+     * b. Author Name: Kushal
+     * c. Description: Home Depot Customer Service All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = -3, enabled = true)
     public void CustomerServiceTestCase() {
         test = reports.createTest("Customer Services TestCase");
-        HomeDepotFooterPageCustomerService hdfc = new HomeDepotFooterPageCustomerService(test);
-        hdfc.CustomerService();
+        HomeDepotFooterPageCustomerService homeDepotFooterPageCustomerService = new HomeDepotFooterPageCustomerService(test);
+        homeDepotFooterPageCustomerService.customerServiceTestCase();
     }
 
+    /*
+     * a. Method Name: resourcesTestCase
+     * b. Author Name: Kushal
+     * c. Description: Home Depot Resources All TestCase
+     * d. Return Type: void
+     * e. Parameters: none
+     */
     @Test(priority = -2, enabled = true)
     public void resourcesTestCase() {
         test = reports.createTest("Resources TestCase");
         HomeDepotFooterResources homeDepotFooterResources = new HomeDepotFooterResources(test);
-        homeDepotFooterResources.Resources();
+        homeDepotFooterResources.resourcesTestCase();
     }
 
     /*
