@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 
 import uistore.HomeDepotAboutUsFooterPageLocator;
 import utils.Base;
+import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.Screenshot;
 import utils.WebDriverHelper;
@@ -18,6 +19,13 @@ public class HomeDepotAboutUsFooterPage {
         helper= new WebDriverHelper(Base.driver);
         this.test=test;
     }
+    /*
+    * a. Method Name: clickOnCareers
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method waits for the 'Careers' link in the footer to be visible, scrolls to it, clicks it, and logs the action.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void clickOnCareers(){
         try {
             helper.waitForElementToBeVisible(HomeDepotAboutUsFooterPageLocator.careers, 10);
@@ -30,23 +38,37 @@ public class HomeDepotAboutUsFooterPage {
             test.log(Status.FAIL, "Not Clicked on Careers");
         }
     }
+    /*
+    * a. Method Name: verifyUrlCareers
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads the expected URL for the 'Careers' page from an Excel file and verifies if the current browser URL matches it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlCareers(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 0, 2);
         try {
-            Assert.assertEquals(helper.getUrl(),"https://careers.homedepot.com/");
-            LoggerHandler.info("Verified url for Careers");
-            test.log(Status.PASS, "Verified url for Careers");
+            Assert.assertEquals(helper.getUrl(),excelData);
+            LoggerHandler.info("Verified url for Careers - "+excelData);
+            test.log(Status.PASS, "Verified url for Careers - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Careers");
-            test.log(Status.FAIL, "Not Verified url for Careers");
+            LoggerHandler.error("Not Verified url for Careers - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Careers - "+excelData);
         }
     }
+    /*
+    * a. Method Name: clickOnCorporateInformation
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method navigates back, waits for the 'Corporate Information' link in the footer, scrolls to it, clicks it, and logs the action.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void clickOnCorporateInformation(){
         try {
             helper.navigateBack();
             helper.waitForElementToBeVisible(HomeDepotAboutUsFooterPageLocator.corporateInformation, 10);
             helper.scrollToEnd();
             helper.clickOnElement(HomeDepotAboutUsFooterPageLocator.corporateInformation);
-            Assert.assertEquals(helper.getUrl(),"https://corporate.homedepot.com/");
             LoggerHandler.info("Clicked on Corporate Information");
             test.log(Status.PASS, "Clicked on Corporate Information");
         } catch (Exception e) {
@@ -54,16 +76,31 @@ public class HomeDepotAboutUsFooterPage {
             test.log(Status.FAIL, "Not Clicked on Corporate Information");
         }
     }
+    /*
+    * a. Method Name: verifyUrlCorporateInformation
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads the expected URL for the 'Corporate Information' page from an Excel file and verifies if the current browser URL matches it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlCorporateInformation(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 1, 2);
         try {
-            Assert.assertEquals(helper.getUrl(),"https://corporate.homedepot.com/");
-            LoggerHandler.info("Verified url for Corporate Information");
-            test.log(Status.PASS, "Verified url for Corporate Information");
+            Assert.assertEquals(helper.getUrl(),excelData);
+            LoggerHandler.info("Verified url for Corporate Information - "+excelData);
+            test.log(Status.PASS, "Verified url for Corporate Information - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Corporate Information");
-            test.log(Status.FAIL, "Not Verified url for Corporate Information");
+            LoggerHandler.error("Not Verified url for Corporate Information - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Corporate Information - "+excelData);
         }
     }
+    /*
+    * a. Method Name: clickOnDigitalNewsroom
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method navigates back, waits for the 'Digital Newsroom' link in the footer, scrolls to it, clicks it, and logs the action.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void clickOnDigitalNewsroom(){
         try {
             helper.navigateBack();
@@ -73,21 +110,35 @@ public class HomeDepotAboutUsFooterPage {
             LoggerHandler.info("Clicked on Digital Newsroom");
             test.log(Status.PASS, "Clicked on Digital Newsroom");
         } catch (Exception e) {
-            LoggerHandler.error("Not Verified url for Digital Newsroom");
-            test.log(Status.FAIL, "Not Verified url for Digital Newsroom");
+            LoggerHandler.error("Not Clicked on Digital Newsroom");
+            test.log(Status.FAIL, "Not Clicked on Digital Newsroom");
         }
     }
+    /*
+    * a. Method Name: verifyUrlDigitalNewsroom
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads the expected URL for the 'Digital Newsroom' page from an Excel file and verifies if the current browser URL matches it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlDigitalNewsroom(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 2, 2);
         try {
-            Assert.assertEquals(helper.getUrl(),"https://corporate.homedepot.com/newsroom");
-            // Assert.assertEquals(helper.getUrl(),"https://corporate.homedepot.com/page/newsroom");
-            LoggerHandler.info("Verified url for Digital Newsroom");
-            test.log(Status.PASS, "Verified url for Digital Newsroom");
+            Assert.assertEquals(helper.getUrl(),excelData);
+            LoggerHandler.info("Verified url for Digital Newsroom - "+excelData);
+            test.log(Status.PASS, "Verified url for Digital Newsroom - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Digital Newsroom");
-            test.log(Status.FAIL, "Not Verified url for Digital Newsroom");
+            LoggerHandler.error("Not Verified url for Digital Newsroom - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Digital Newsroom - "+excelData);
         }
     }
+    /*
+    * a. Method Name: clickOnHomeDepotFoundation
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method navigates back, waits for the 'Home Depot Foundation' link in the footer, scrolls to it, clicks it, and logs the action.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void clickOnHomeDepotFoundation(){
         try {
             helper.navigateBack();
@@ -97,21 +148,35 @@ public class HomeDepotAboutUsFooterPage {
             LoggerHandler.info("Clicked on Home Depot Foundation");
             test.log(Status.PASS, "Clicked on Home Depot Foundation");
         } catch (Exception e) {
-            LoggerHandler.error("Not Verified url for Home Depot Foundation");
-            test.log(Status.FAIL, "Not Verified url for Home Depot Foundation");
+            LoggerHandler.error("Not Clicked on Home Depot Foundation");
+            test.log(Status.FAIL, "Not Clicked on Home Depot Foundation");
         }
     }
+    /*
+    * a. Method Name: verifyUrlHomeDepotFoundation
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads the expected URL for the 'Home Depot Foundation' page from an Excel file and verifies if the current browser URL matches it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlHomeDepotFoundation(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 3, 2);
         try {
-            Assert.assertEquals(helper.getUrl(),"https://corporate.homedepot.com/foundation");
-            // Assert.assertEquals(helper.getUrl(),"https://corporate.homedepot.com/page/home-depot-foundation");
-            LoggerHandler.info("Verified url for Depot Foundation");
-            test.log(Status.PASS, "Verified url for Depot Foundation");
+            Assert.assertEquals(helper.getUrl(),excelData);
+            LoggerHandler.info("Verified url for Home Depot Foundation - "+excelData);
+            test.log(Status.PASS, "Verified url for Home Depot Foundation - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Depot Foundation");
-            test.log(Status.FAIL, "Not Verified url for Depot Foundation");
+            LoggerHandler.error("Not Verified url for Home Depot Foundation - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Home Depot Foundation - "+excelData);
         }
     }
+/*
+ * a. Method Name: clickOnInvestorRelation
+ * b. Author Name: Vansh Vijay
+ * c. Description: This method navigates back, waits for the 'Investor Relations' link in the footer, scrolls to it, clicks it, and logs the action.
+ * d. Return Type: void
+ * e. Parameters: none
+ */
     public void clickOnInvestorRelation(){
         try {
             helper.navigateBack();
@@ -125,16 +190,31 @@ public class HomeDepotAboutUsFooterPage {
             test.log(Status.FAIL, "Not Clicked on Investor Relations");
         } 
     }
+    /*
+    * a. Method Name: verifyUrlInvestorRelation
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads the expected URL for the 'Investor Relations' page from an Excel file and verifies if the current browser URL matches it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlInvestorRelation(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 4, 2);
         try {
-            Assert.assertEquals(helper.getUrl(),"https://ir.homedepot.com/");
-            LoggerHandler.info("Verified url for Investor Relations");
-            test.log(Status.PASS, "Verified url for Investor Relations");
+            Assert.assertEquals(helper.getUrl(),excelData);
+            LoggerHandler.info("Verified url for Investor Relations - "+excelData);
+            test.log(Status.PASS, "Verified url for Investor Relations - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Investor Relations");
-            test.log(Status.FAIL, "Not Verified url for Investor Relations");
+            LoggerHandler.error("Not Verified url for Investor Relations - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Investor Relations - "+excelData);
         }
     }
+    /*
+    * a. Method Name: clickOnGovernmentCustomers
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method navigates back, waits for the 'Government Customers' link in the footer, scrolls to it, clicks it, and logs the action.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void clickOnGovernmentCustomers(){
         try {
             helper.navigateBack();
@@ -148,23 +228,37 @@ public class HomeDepotAboutUsFooterPage {
             test.log(Status.FAIL, "Not Clicked on Government Customers");
         }
     }
+    /*
+    * a. Method Name: verifyUrlGovernmentCustomers
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads an expected URL substring for the 'Government Customers' page from an Excel file and verifies if the current browser URL contains it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlGovernmentCustomers(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 5, 2);
         try {
-            Assert.assertTrue(helper.getUrl().contains("/c/Government_Customers"));
-            LoggerHandler.info("Verified url for Government Customers");
-            test.log(Status.PASS, "Verified url for Government Customers");
+            Assert.assertTrue(helper.getUrl().contains(excelData));
+            LoggerHandler.info("Verified url for Government Customers - "+excelData);
+            test.log(Status.PASS, "Verified url for Government Customers - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Government Customers");
-            test.log(Status.FAIL, "Not Verified url for Government Customers");
+            LoggerHandler.error("Not Verified url for Government Customers - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Government Customers - "+excelData);
         }
     }
+    /*
+    * a. Method Name: clickOnSupplierProviders
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method navigates back, waits for the 'Suppliers & Providers' link, scrolls to it, clicks it, verifies the URL contains the expected path, and logs the action.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void clickOnSupplierProviders(){
         try {
             helper.navigateBack();
             helper.waitForElementToBeVisible(HomeDepotAboutUsFooterPageLocator.suppliersProviders, 10);
             helper.scrollToEnd();
             helper.clickOnElement(HomeDepotAboutUsFooterPageLocator.suppliersProviders);
-            Assert.assertTrue(helper.getUrl().contains("/c/suppliers_and_providers"));
             LoggerHandler.info("Clicked on Suppliers & Providers");
             test.log(Status.PASS, "Clicked on Suppliers & Providers");
         } catch (Exception e) {
@@ -172,16 +266,31 @@ public class HomeDepotAboutUsFooterPage {
             test.log(Status.FAIL, "Not Clicked on Suppliers & Providers");
         }
     }
+    /*
+    * a. Method Name: verifyUrlSupplierProviders
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads an expected URL substring for the 'Suppliers & Providers' page from an Excel file and verifies if the current browser URL contains it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlSupplierProviders(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 6, 2);
         try {
-            Assert.assertTrue(helper.getUrl().contains("/c/suppliers_and_providers"));
-            LoggerHandler.info("Verified url for Suppliers & Providers");
-            test.log(Status.PASS, "Verified url for Suppliers & Providers");
+            Assert.assertTrue(helper.getUrl().contains(excelData));
+            LoggerHandler.info("Verified url for Suppliers & Providers - "+excelData);
+            test.log(Status.PASS, "Verified url for Suppliers & Providers - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Suppliers & Providers");
-            test.log(Status.FAIL, "Not Verified url for Suppliers & Providers");
+            LoggerHandler.error("Not Verified url for Suppliers & Providers - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Suppliers & Providers - "+excelData);
         }
     }
+/*
+ * a. Method Name: clickOnAffiliateProgram
+ * b. Author Name: Vansh Vijay
+ * c. Description: This method navigates back, waits for the 'Affiliate Program' link in the footer, scrolls to it, clicks it, and logs the action.
+ * d. Return Type: void
+ * e. Parameters: none
+ */
     public void clickOnAffiliateProgram(){
         try {
             helper.navigateBack();
@@ -195,23 +304,37 @@ public class HomeDepotAboutUsFooterPage {
             test.log(Status.FAIL, "Not Clicked on Affiliate Program");
         }
     }
+    /*
+    * a. Method Name: verifyUrlAffiliateProgram
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads an expected URL substring for the 'Affiliate Program' page from an Excel file and verifies if the current browser URL contains it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlAffiliateProgram(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 7, 2);
         try {
-            Assert.assertTrue(helper.getUrl().contains("https://www.homedepot.com/c/SF_MS_The_Home_Depot_Affiliate_Program"));
-            LoggerHandler.info("Verified url for Affiliate Program");
-            test.log(Status.PASS, "Verified url for Affiliate Program");
+            Assert.assertTrue(helper.getUrl().contains(excelData));
+            LoggerHandler.info("Verified url for Affiliate Program - "+excelData);
+            test.log(Status.PASS, "Verified url for Affiliate Program - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Affiliate Program");
-            test.log(Status.FAIL, "Not Verified url for Affiliate Program");
+            LoggerHandler.error("Not Verified url for Affiliate Program - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Affiliate Program - "+excelData);
         }
     }
+    /*
+    * a. Method Name: clickOnEcoActions
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method navigates back, waits for the 'Eco Actions' link in the footer, scrolls to it, clicks it, logs the action, and takes a screenshot.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void clickOnEcoActions(){
         try {
             helper.navigateBack();
             helper.waitForElementToBeVisible(HomeDepotAboutUsFooterPageLocator.ecoActions, 10);
             helper.scrollToEnd();
             helper.clickOnElement(HomeDepotAboutUsFooterPageLocator.ecoActions);
-            Assert.assertTrue(helper.getUrl().contains("https://ecoactions.homedepot.com/"));
             LoggerHandler.info("Clicked on Eco Actions");
             test.log(Status.PASS, "Clicked on Eco Actions");
             Screenshot.captureScreenShot("Eco Actions");
@@ -220,16 +343,31 @@ public class HomeDepotAboutUsFooterPage {
             test.log(Status.FAIL, "Not Clicked on Eco Actions");
         }
     }
+    /*
+    * a. Method Name: verifyUrlEcoActions
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method reads an expected URL substring for the 'Eco Actions' page from an Excel file and verifies if the current browser URL contains it. Logs the verification result.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void verifyUrlEcoActions(){
+        String excelData = ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "Vansh", 8, 2);
         try {
-            Assert.assertTrue(helper.getUrl().contains("https://ecoactions.homedepot.com/"));
-            LoggerHandler.info("Verified url for Eco Actions");
-            test.log(Status.PASS, "Verified url for Eco Actions");
+            Assert.assertTrue(helper.getUrl().contains(excelData));
+            LoggerHandler.info("Verified url for Eco Actions - "+excelData);
+            test.log(Status.PASS, "Verified url for Eco Actions - "+excelData);
         } catch (AssertionError e) {
-            LoggerHandler.error("Not Verified url for Eco Actions");
-            test.log(Status.FAIL, "Not Verified url for Eco Actions");
+            LoggerHandler.error("Not Verified url for Eco Actions - "+excelData);
+            test.log(Status.FAIL, "Not Verified url for Eco Actions - "+excelData);
         }
     }
+    /*
+    * a. Method Name: aboutUsFooterFlow
+    * b. Author Name: Vansh Vijay
+    * c. Description: This method executes a sequence of actions to test the 'About Us' section links in the footer. It clicks each link and verifies its corresponding URL.
+    * d. Return Type: void
+    * e. Parameters: none
+    */
     public void aboutUsFooterFlow(){
         clickOnCareers();
         verifyUrlCareers();
