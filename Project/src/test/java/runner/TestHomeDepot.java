@@ -66,7 +66,7 @@ public class TestHomeDepot extends Base {
     }
 
     /*
-     * a. Method Name: categoryTestCase
+     * a. Method Name: shopAllTestCase
      * b. Author Name: Jaya vardhan Raju G
      * c. Description: Home Depot Shop All TestCase
      * d. Return Type: void
@@ -93,14 +93,14 @@ public class TestHomeDepot extends Base {
         homeDepotDIYWorkShopPage.testDIYWorkshops();
     }
 
-    @Test(priority = 5, enabled = true)
+    @Test(priority = -3, enabled = true)
     public void CustomerServiceTestCase() {
         test = reports.createTest("Customer Services TestCase");
         HomeDepotFooterPageCustomerService hdfc = new HomeDepotFooterPageCustomerService(test);
         hdfc.CustomerService();
     }
 
-    @Test(priority = 6, enabled = true)
+    @Test(priority = -2, enabled = true)
     public void resourcesTestCase() {
         test = reports.createTest("Resources TestCase");
         HomeDepotFooterResources homeDepotFooterResources = new HomeDepotFooterResources(test);
