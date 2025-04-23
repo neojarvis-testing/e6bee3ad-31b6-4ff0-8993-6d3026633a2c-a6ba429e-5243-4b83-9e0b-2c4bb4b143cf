@@ -22,7 +22,13 @@ public class Reporter extends Base{
     public static ExtentReports report;
     public static ExtentTest test;
     public static ExtentSparkReporter spark;
-
+    
+    /* a. Method Name: generateExtentReports
+     * b. Author Name: Kushal
+     * c. Description: This method generates the report.
+     * d. Return Type: ExtentReports.
+     * e. Parameters:reportName.
+     */
     public static ExtentReports generateExtentReports(String reportName){
         String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         String path = System.getProperty("user.dir")+"/reports/"+reportName+"_"+timestamp+".html";
@@ -33,6 +39,13 @@ public class Reporter extends Base{
         report.attachReporter(spark);
         return report;
     }
+
+    /* a. Method Name: CaptureScreenShot
+     * b. Author Name: Kushal
+     * c. Description: This method captures the screenshot.
+     * d. Return Type: String
+     * e. Parameters: filename.
+     */
     public static String CaptureScreenShot(String filename){
         String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         String name = filename + timestamp + ".png";
@@ -49,6 +62,12 @@ public class Reporter extends Base{
         }
         return destPath;
     }
+    /* a. Method Name: attachScreenshotToReport
+     * b. Author Name: Kushal
+     * c. Description: This method attaches the screenshot to the report.
+     * d. Return Type: void
+     * e. Parameters: filename, Extent test, description.
+     */
     public static void attachScreenshotToReport(String filename, ExtentTest test, String description){
         try {
             String screenshotPath = CaptureScreenShot(filename);
