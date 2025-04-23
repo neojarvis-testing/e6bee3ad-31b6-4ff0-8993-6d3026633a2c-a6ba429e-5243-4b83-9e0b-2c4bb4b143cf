@@ -122,17 +122,17 @@ public class TestHomeDepot extends Base {
     }
 
     @Test(priority = 9, enabled = true)
-    public void buildingMaterialsTestCase() {
-        test = reports.createTest("Building Material TestCase");
-        HomeDepotBuildingMaterials hd = new HomeDepotBuildingMaterials(test);
-        hd.buildingMaterials();
+    public void buildingMaterialsTestcases() {
+        test = reports.createTest("Building Material Testcases");
+        HomeDepotBuildingMaterials homeDepotBuildingMaterials = new HomeDepotBuildingMaterials(test);
+        homeDepotBuildingMaterials.buildingMaterialsTestCase();
     }
 
     @Test(priority = 1, enabled = true)
-    public void footerLinksTestCase() {
-        test = reports.createTest("Footer Links TestCase");
-        HomeDepotFooterLinksPage hd = new HomeDepotFooterLinksPage(test);
-        hd.footerLinks();
+    public void footerLinksTestcases() {
+        test = reports.createTest("Footer Links Testcases");
+        HomeDepotFooterLinksPage homeDepotFooterLinksPage = new HomeDepotFooterLinksPage(test);
+        homeDepotFooterLinksPage.footerLinksTestCase();
     }
 
     /*
