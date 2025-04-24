@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -15,6 +14,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.google.common.io.Files;
 
 
 public class Reporter extends Base{
@@ -46,16 +46,16 @@ public class Reporter extends Base{
      * d. Return Type: String
      * e. Parameters: filename.
      */
-    public static String CaptureScreenShot(String filename){
+    public static String captureScreenShot(String filename){
         String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-        String name = filename + timestamp + ".png";
+        String name = filename + "_" + timestamp + ".png";
         String destPath = "./"+name;
         ts = (TakesScreenshot)driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
-        File screenshotsDir = new File(System.getProperty("user.dir")+"/reports/reportscreenshots");
+        File screenshotsDir = new File(System.getProperty("user.dir")+"/reports");
         File target = new File(screenshotsDir, name);
         try{
-            FileUtils.copyFile(file, target);
+            Files.copy(file, target);
         }
         catch(IOException e){
             e.printStackTrace();
@@ -70,7 +70,7 @@ public class Reporter extends Base{
      */
     public static void attachScreenshotToReport(String filename, ExtentTest test, String description){
         try {
-            String screenshotPath = CaptureScreenShot(filename);
+            String screenshotPath = captureScreenShot(filename);
             test.log(Status.INFO, description, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
         } catch (Exception e) {
             e.printStackTrace();
