@@ -25,7 +25,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Specials&Offers in the footer section
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnSpecialsOffers() {
         try {
@@ -33,7 +33,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.specialAndOffers, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.specialAndOffers);
             LoggerHandler.info("Clicked on Specials & Offers");
-            test.log(Status.INFO, "Clicked on Special & Offers");
+            test.log(Status.PASS, "Clicked on Special & Offers");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Special & Offers");
             test.log(Status.FAIL, "Not clicked on Special & Offers");
@@ -43,7 +43,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on the Specials&Offers.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifySavingsCenter() {
         try {
@@ -51,7 +51,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 0, 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/Savings_Center");
-            test.log(Status.INFO, "URL contains /c/Savings_Center");
+            test.log(Status.PASS, "URL contains /c/Savings_Center");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /c/Savings_Center");
             test.log(Status.FAIL, "URL doesn't contains /c/Savings_Center");
@@ -61,7 +61,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Military Discount Benefit in the footer section
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnMilitaryDiscountBenefit() {
         try {
@@ -69,7 +69,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.militaryDiscountBenefit, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.militaryDiscountBenefit);
             LoggerHandler.info("Clicked on Military Discount Benefit");
-            test.log(Status.INFO, "Clicked on Military Discount Benefit");
+            test.log(Status.PASS, "Clicked on Military Discount Benefit");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Military Discount Benefit");
             test.log(Status.FAIL, "Not clicked on Military Discount Benefit");
@@ -79,7 +79,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on the Military Discount Benefit.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyMilitary() {
         try {
@@ -87,7 +87,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 1, 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/military");
-            test.log(Status.INFO, "URL contains /c/military");
+            test.log(Status.PASS, "URL contains /c/military");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /c/military");
             test.log(Status.FAIL, "URL doesn't contains /c/military");
@@ -97,7 +97,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on DIY Projects And Ideas in the footer section
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnDIYProjectsAndIdeas() {
         try {
@@ -105,7 +105,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.dIYProject, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.dIYProject);
             LoggerHandler.info("Clicked on DIY Projects And Ideas");
-            test.log(Status.INFO, "Clicked on DIY Projects And Ideas");
+            test.log(Status.PASS, "Clicked on DIY Projects And Ideas");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on DIY Projects And Ideas");
             test.log(Status.FAIL, "Not clicked on DIY Projects And Ideas");
@@ -115,7 +115,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on the DIY Projects And Ideas.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyDIYProject() {
         try {
@@ -123,7 +123,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 2, 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/diy_projects_and_ideas");
-            test.log(Status.INFO, "URL contains /c/diy_projects_and_ideas");
+            test.log(Status.PASS, "URL contains /c/diy_projects_and_ideas");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /c/diy_projects_and_ideas");
             test.log(Status.FAIL, "URL doesn't contains /c/diy_projects_and_ideas");
@@ -133,7 +133,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Truck And Tool Rental in the footer section
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnTruckAndToolRental() {
         try {
@@ -141,7 +141,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.truckAndToolRental, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.truckAndToolRental);
             LoggerHandler.info("Clicked on Truck and Tool Rental");
-            test.log(Status.INFO, "Clicked on Truck and Tool Rental");
+            test.log(Status.PASS, "Clicked on Truck and Tool Rental");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Truck and Tool Rental");
             test.log(Status.FAIL, "Not clicked on Truck and Tool Rental");
@@ -151,7 +151,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on the Truck And Tool Rental.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyToolAndTruck() {
         try {
@@ -159,7 +159,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 3, 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/tool_and_truck_rental");
-            test.log(Status.INFO, "URL contains /c/tool_and_truck_rental");
+            test.log(Status.PASS, "URL contains /c/tool_and_truck_rental");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /c/tool_and_truck_rental");
             test.log(Status.FAIL, "URL doesn't contains /c/tool_and_truck_rental");
@@ -169,7 +169,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Installation And Services in the footer section
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnInstallationAndServices() {
         try {
@@ -177,7 +177,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.installationandServices, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.installationandServices);
             LoggerHandler.info("Clicked on Installation & Services");
-            test.log(Status.INFO, "Clicked on Installation & Services");
+            test.log(Status.PASS, "Clicked on Installation & Services");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Installation & Services");
             test.log(Status.FAIL, "Not clicked on Installation & Services");
@@ -187,7 +187,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on the Installation And Services.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyServices() {
         try {
@@ -195,7 +195,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 4, 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /services");
-            test.log(Status.INFO, "URL contains /services");
+            test.log(Status.PASS, "URL contains /services");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /services");
             test.log(Status.FAIL, "URL doesn't contains /services");
@@ -205,7 +205,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Moving Supplies And Rentals in the footer section.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnMovingSuppliesAndRentals() {
         try {
@@ -213,7 +213,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.movingSuppliesAndRentals, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.movingSuppliesAndRentals);
             LoggerHandler.info("Clicked on Moving Supplies And Rentals");
-            test.log(Status.INFO, "Clicked on Moving Supplies And Rentals");
+            test.log(Status.PASS, "Clicked on Moving Supplies And Rentals");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Moving Supplies And Rentals");
             test.log(Status.FAIL, "Not clicked on Moving Supplies And Rentals");
@@ -223,7 +223,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on the Moving Supplies And Rentals.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyStorageOrganization() {
         try {
@@ -231,7 +231,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1",5 , 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r");
-            test.log(Status.INFO, "URL contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r");
+            test.log(Status.PASS, "URL contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r");
             test.log(Status.FAIL, "URL doesn't contains /b/Storage-Organization-Moving-Supplies/N-5yc1vZc89r");
@@ -241,7 +241,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Protection Plans in the footer section.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnProtectionPlans() {
         try {
@@ -249,7 +249,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.protectionPlans, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.protectionPlans);
             LoggerHandler.info("Clicked on Protection Plans");
-            test.log(Status.INFO, "Clicked on Protection Plans");
+            test.log(Status.PASS, "Clicked on Protection Plans");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Protection Plans");
             test.log(Status.FAIL, "Not clicked on Protection Plans");
@@ -259,7 +259,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on the Protection Plans.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyProtectionPlans() {
         try {
@@ -267,7 +267,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 6, 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /c/The_Home_Depot_Protection_Plans");
-            test.log(Status.INFO, "URL contains /c/The_Home_Depot_Protection_Plans");
+            test.log(Status.PASS, "URL contains /c/The_Home_Depot_Protection_Plans");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /c/The_Home_Depot_Protection_Plans");
             test.log(Status.FAIL, "URL doesn't contains /c/The_Home_Depot_Protection_Plans");
@@ -277,7 +277,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Rebate Center in the footer section.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnRebateCenter(){
         try {
@@ -285,7 +285,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.rebateCenter, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.rebateCenter);
             LoggerHandler.info("Clicked on Rebate center");
-            test.log(Status.INFO, "Clicked on Rebate center");
+            test.log(Status.PASS, "Clicked on Rebate center");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Rebate center");
             test.log(Status.FAIL, "Not clicked on Rebate center");
@@ -295,7 +295,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on Rebate Center.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyRebate() {
         try {
@@ -303,7 +303,7 @@ public class HomeDepotFooterResources {
             String expected=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Kushal.xlsx", "Sheet1", 7, 0);
             Assert.assertTrue(text.contains(expected));
             LoggerHandler.info("URL contains /rebate-center/index.html");
-            test.log(Status.INFO, "URL contains /rebate-center/index.html");
+            test.log(Status.PASS, "URL contains /rebate-center/index.html");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /rebate-center/index.html");
             test.log(Status.FAIL, "URL doesn't contains /rebate-center/index.html");
@@ -313,7 +313,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Clicks on Gift Cards in the footer section.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void clickOnGiftCards(){
         try {
@@ -321,7 +321,7 @@ public class HomeDepotFooterResources {
             helper.waitForElementToBeVisible(HomeDepotFooterResourcesLocators.giftCards, 10);
             helper.clickOnElement(HomeDepotFooterResourcesLocators.giftCards);
             LoggerHandler.info("Clicked on Gift Cards");
-            test.log(Status.INFO, "Clicked on Gift Cards");
+            test.log(Status.PASS, "Clicked on Gift Cards");
         } catch (Exception e) {
             LoggerHandler.error("Not clicked on Gift Cards");
             test.log(Status.FAIL, "Not clicked on Gift Cards");
@@ -331,7 +331,7 @@ public class HomeDepotFooterResources {
      * b. Author Name: Kushal
      * c. Description: Verifies the URL after clicking on Gift Cards.
      * d. Return Type: void
-     * e. Parameters:None
+     * e. Parameters: none
      */
     public void verifyGiftCard() {
         try {
@@ -341,7 +341,7 @@ public class HomeDepotFooterResources {
             Screenshot.captureScreenShot("Resources");
             Reporter.attachScreenshotToReport("Resources", test, "Attached");
             LoggerHandler.info("URL contains /c/gift-cards");
-            test.log(Status.INFO, "URL contains /c/gift-cards");
+            test.log(Status.PASS, "URL contains /c/gift-cards");
         } catch (Exception e) {
             LoggerHandler.error("URL doesn't contains /c/gift-cards");
             test.log(Status.FAIL, "URL doesn't contains /c/gift-cards");

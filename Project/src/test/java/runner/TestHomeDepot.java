@@ -115,7 +115,7 @@ public class TestHomeDepot extends Base {
      * e. Parameters: none
      */
     @Test(priority = -3, enabled = true)
-    public void CustomerServiceTestCase() {
+    public void customerServiceTestCase() {
         test = reports.createTest("Customer Services TestCase");
         HomeDepotFooterPageCustomerService homeDepotFooterPageCustomerService = new HomeDepotFooterPageCustomerService(test);
         homeDepotFooterPageCustomerService.customerServiceTestCase();

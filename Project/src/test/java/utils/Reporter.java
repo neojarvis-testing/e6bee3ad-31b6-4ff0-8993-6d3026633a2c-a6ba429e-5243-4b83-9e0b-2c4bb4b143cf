@@ -46,7 +46,7 @@ public class Reporter extends Base{
      * d. Return Type: String
      * e. Parameters: filename.
      */
-    public static String CaptureScreenShot(String filename){
+    public static String captureScreenShot(String filename){
         String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         String name = filename + timestamp + ".png";
         String destPath = "./"+name;
@@ -70,7 +70,7 @@ public class Reporter extends Base{
      */
     public static void attachScreenshotToReport(String filename, ExtentTest test, String description){
         try {
-            String screenshotPath = CaptureScreenShot(filename);
+            String screenshotPath = captureScreenShot(filename);
             test.log(Status.INFO, description, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
         } catch (Exception e) {
             e.printStackTrace();
