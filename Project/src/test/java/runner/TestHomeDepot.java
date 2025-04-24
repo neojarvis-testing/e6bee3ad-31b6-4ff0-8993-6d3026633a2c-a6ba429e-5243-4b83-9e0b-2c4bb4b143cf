@@ -1,5 +1,7 @@
 package runner;
 
+import java.io.IOException;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -21,6 +23,7 @@ import pages.HomeDepotServicesPage;
 import pages.HomeDepotShopAll;
 import utils.Base;
 import utils.Reporter;
+import utils.SendEmailWithAttachment;
 
 public class TestHomeDepot extends Base {
     ExtentReports reports;
@@ -213,5 +216,10 @@ public class TestHomeDepot extends Base {
     @AfterClass
     public void closeReport() {
         reports.flush();
+        try {
+            SendEmailWithAttachment.sendEmailWithAttachment();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
