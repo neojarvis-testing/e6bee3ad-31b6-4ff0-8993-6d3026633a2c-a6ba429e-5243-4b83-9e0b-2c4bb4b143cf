@@ -160,7 +160,7 @@ public class TestHomeDepot extends Base {
      * e. Parameters: none
      */
     @Test(priority = 8, enabled = true)
-    public void creditOffersTestCas() {
+    public void creditOffersTestCase() {
         test = reports.createTest("Credit Offers TestCase");
         HomeDepotCreditOffersPage homeDepotCreditOffersPage = new HomeDepotCreditOffersPage(test);
         homeDepotCreditOffersPage.creditOffersTestCase();
